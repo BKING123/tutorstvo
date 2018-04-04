@@ -1,5 +1,5 @@
 # Tutorstvo
-Uradna spletna stran Tutorstva GL
+[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/)
 
 **Prosim sledite file schemi**\
 Vsak subpage je svoj directory, notr je index.html\
@@ -9,7 +9,7 @@ Slike, SVGji, videi in druga multimedia gre v root/media directory
 Commiti samo s kometarji so dobrodosli.
 
 Cilji:
--
+------
 - vpadljivost, estetika; privabljamo bodoce stranke!
 - hitrost, odzivnost in preprostost.
 - vzdrzljiva koda; stran lahko za nami ostane se vec let.
