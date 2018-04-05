@@ -19,6 +19,7 @@ Ce rabimo sumnike za kaksnen font, al pa bold/italic style, je treba dodat! (odp
 Use fonte, ki jih uporabljamo, oznaci z zvezdico
 Neuporabljene fonte v produkciji odstranimo.
 
+Predlog: fonte, kot so PT Mono lahko includamo samo na login strani za tutorje
 
 
 =============
@@ -37,26 +38,18 @@ Barvna shema:
 /************************************************************************************************************************************************/
 /* PISAVE */
 /************************************************************************************************************************************************/
+
+/* NASLOVI IN NAVIGACIJA */
 h1, h2, h3, h4, h5, h6 { /* vsi naslovi so Trebuchet MS */
 	font-family: Trebuchet MS; /* Yon je pravi fanboy tega fonta */
 }
-
-nav {	
+nav {
 	font-family: Trebuchet MS; /* poskusimo se kaj drugega? */
 }
 
+/* VSEBINA */
 p {
 	font-family: 'Roboto', Helvetica;
-}
-h3.article { /* naslov novice */
-	font-family: Trebuchet MS;
-}
-i.article { /* datum objave novice */
-	font-family: 'Source Sans Pro', Arial;
-}
-h6.article { /* avtor novice */
-	font-family: 'Work Sans', Trebuchet MS;
-	letter-spacing: 1px;
 }
 
 
@@ -64,6 +57,10 @@ h6.article { /* avtor novice */
 /************************************************************************************************************************************************/
 /* BARVE */
 /************************************************************************************************************************************************/
+
+/*****************/
+/* GLAVNI NASLOV */
+/*****************/
 #title {
 	background: lightgreen;
 }
@@ -72,25 +69,30 @@ h1 {
 }
 
 
+/**************/
 /* NAVIGACIJA */
+/**************/
 nav {
 	background: darkgreen;
 }
 nav a {
     color: 	white;
 }
-/*Obarvanje linkov v navigaciji*/
+/* Obarvanje hovering linkov v navigaciji */
 nav a:hover {
     background: white;
     color: darkgreen;
 }
-/*Obarvanje linka trenutne strani v navigaciji*/
+/* Obarvanje linka trenutne strani v navigaciji */
 nav a.selected {
 	background: white;
     color: darkgreen;
 }
 
 
+/***********/
+/* VSEBINA */
+/***********/
 body {
 	/* glavni gradient ob straneh */
 	background: linear-gradient(to right, green, white 14%, white 86%, green 100%);
@@ -101,21 +103,17 @@ h2 { /* section titles */
 	border-bottom-color: darkgreen;
 }
 
-article {
-	background: linear-gradient(to right, yellow, white);
-	border-left-color: gold;
-}
-
-
-
 
 
 
 
 /************************************************************************************************************************************************/
-/* TITLE */
+/* STRUKTURA STRANI */
 /************************************************************************************************************************************************/
 
+/*****************/
+/* GLAVNI NASLOV */
+/*****************/
 #title {
 	margin: 0;
 	padding: 0.5em;
@@ -128,10 +126,9 @@ h1 {
 
 
 
-/************************************************************************************************************************************************/
+/**************/
 /* NAVIGACIJA */
-/************************************************************************************************************************************************/
-
+/**************/
 nav {
 	overflow: hidden;
 	position: sticky;
@@ -144,80 +141,48 @@ nav {
 	z-index: 1;
 }
 
-/*Posamezen element navigacije*/
+/* Posamezen element navigacije */
 nav a {
-    float: left;
     display: block;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
+nav a.left {
+	float: left;
+}
+nav a.right {
+	float: right;
+}
 
-/************************************************************************************************************************************************/
-/* TELO IN DIVI */
-/************************************************************************************************************************************************/
 
+
+/***************/
+/* GLAVNO TELO */
+/***************/
 body {
 	margin: 0px;
-	padding-bottom: 6em;
+	padding-bottom: 6em; /* footer space */
 }
 
 div.telo {
-	margin-left: 15%;
+	margin-left: 15%; /* margini ob straneh za gradient*/
 	margin-right: 15%;
 }
 
-/************************************************************************************************************************************************/
-/* NASLOVI IN TEXT */
-/************************************************************************************************************************************************/
-p {
+
+
+/**********************/
+/* NASLOVI IN VSEBINA */
+/**********************/
+p { /* main text */
 	text-align: justify;
 }
-h2 {
+h2 { /* section title */
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 	font-size: 2em;
 }
 
-/************************************************************************************************************************************************/
-/* NOVICKE */
-/************************************************************************************************************************************************/
-/* TODO: to mora v poseben file, ki je samo za index.html */
-
-article {
-	border-left-style: solid;
-	border-left-width: 0.5em; /* 8px */
-	padding: 1.3em 3em 0.3em 1em; /* top, right, bottom, left */
-}
-article p { /* vsebina novicke */
-	font-size: 1.2em;
-}
-h3.article.title { /* naslov novicke */
-	font-size: 1.5em;
-	display: inline;
-	margin-right: 0.5em;
-	/*
-	* tukaj je izjema: nastavljena je barva, ampak ni na zacetku zravn drugih.
-	* to je zato, ker text shadow verjetno nebo delou prevelkih problemov glede
-	* barvne sheme, hkrati pa se barve ne da nastavt posebi, in je brezveze da je gor.
-	*/
-	text-shadow: 1px 1px white;
-}
-i.article.date { /* datum objave novicke */
-	font-size: 0.8em;
-}
-h6.article.author:before { /* avtor novicke :before */
-	/* To je treba da je tuki, zato da lazi dajem gor content z javascriptom */
-	/* tega se naceloma ne dela ampak who cares */
-	content: 'Avtor: ';
-}
 
 
-/************************************************************************************************************************************************/
-/* SLIKE */
-/************************************************************************************************************************************************/
-/* TODO: to mora v poseben file, ki je samo za index.html */
-#skupinska {
-	width: 40%;
-	float: right;
-}

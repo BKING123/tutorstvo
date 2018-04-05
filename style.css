@@ -1,0 +1,79 @@
+/*
+root/style.css
+
+style ekskluzivno za glavni page (root/index.html)
+
+*/
+
+
+/************************************************************************************************************************************************/
+/* PISAVE */
+/************************************************************************************************************************************************/
+
+/* NOVICKA */
+h3.article { /* naslov novice */
+	font-family: Trebuchet MS;
+}
+i.article { /* datum objave novice */
+	font-family: 'Source Sans Pro', Arial;
+}
+h6.article { /* avtor novice */
+	font-family: 'Work Sans', Trebuchet MS;
+	letter-spacing: 1px;
+}
+
+
+/************************************************************************************************************************************************/
+/* BARVE */
+/************************************************************************************************************************************************/
+
+article { /* novicke */
+	background: linear-gradient(to right, yellow, white);
+	border-left-color: gold;
+}
+
+
+/************************************************************************************************************************************************/
+/* STRUKTURA */
+/************************************************************************************************************************************************/
+
+/***********/
+/* NOVICKA */
+/***********/
+article {
+	border-left-style: solid;
+	border-left-width: 0.5em; /* 8px */
+	padding: 1.3em 3em 0.3em 1em; /* top, right, bottom, left */
+}
+article p { /* vsebina novicke */
+	font-size: 1.2em;
+}
+h3.article.title { /* naslov novicke */
+	font-size: 1.5em;
+	display: inline;
+	margin-right: 0.5em;
+	/*
+	* tukaj je izjema: nastavljena je barva, ampak ni na zacetku zravn drugih.
+	* to je zato, ker text shadow verjetno nebo delou prevelkih problemov glede
+	* barvne sheme, hkrati pa se barve ne da nastavt posebi, in je brezveze da je gor.
+	*/
+	text-shadow: 1px 1px white;
+}
+i.article.date { /* datum objave novicke */
+	font-size: 0.8em;
+}
+h6.article.author:before { /* avtor novicke :before */
+	/* To je treba da je tuki, zato da lazi dajem gor content z javascriptom */
+	/* tega se naceloma ne dela ampak who cares */
+	content: 'Avtor: ';
+}
+
+
+
+/*********/
+/* SLIKE */
+/*********/
+#skupinska {
+	width: 40%;
+	float: right;
+}
