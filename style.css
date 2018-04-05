@@ -1,34 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Mono|Roboto|Source+Sans+Pro|Work+Sans:300');
+/*
+===============
+External fonts:
+
+	font-family: 'Open Sans', sans-serif; 		// 
+
+	font-family: 'Roboto', sans-serif; 			// dobra za navaden text, zgleda lepse kot Helvetica
+
+	font-family: 'Source Sans Pro', sans-serif; // podobna kot Roboto, bolj stylish, a malo tezje berljiva
+	
+	font-family: 'PT Mono', monospace; 			// monospace font - rabimo za login, namesto Courierja
+
+	font-family: 'Work Sans', sans-serif; 		// zelo tanka pisava, primerna za citate ipd.
+
+POMEMBNO!!!
+Ce rabimo sumnike za kaksnen font, al pa bold/italic style, je treba dodat! (odpri nov issue na githubu)
+
+Use fonte, ki jih uporabljamo, oznaci z zvezdico
+Neuporabljene fonte v produkciji odstranimo.
+
+
+
+=============
+Barvna shema:
+	lightgreen
+	green
+	darkgreen
+	#003300 // mal temnejsa kot darkgreen, isti odtenek
+	lightyellow
+	yellow
+	gold
+	white
+*/
+
+
 /************************************************************************************************************************************************/
-/* Title */
+/* PISAVE */
+/************************************************************************************************************************************************/
+h1, h2, h3, h4, h5, h6 { /* vsi naslovi so Trebuchet MS */
+	font-family: Trebuchet MS; /* Yon je pravi fanboy tega fonta */
+}
+
+nav {	
+	font-family: Trebuchet MS; /* poskusimo se kaj drugega? */
+}
+
+p {
+	font-family: 'Roboto', Helvetica;
+}
+h3.article { /* naslov novice */
+	font-family: Trebuchet MS;
+}
+i.article { /* datum objave novice */
+	font-family: 'Source Sans Pro', Arial;
+}
+h6.article { /* avtor novice */
+	font-family: 'Work Sans', Trebuchet MS;
+	letter-spacing: 1px;
+}
+
+
+
+/************************************************************************************************************************************************/
+/* BARVE */
+/************************************************************************************************************************************************/
+#title {
+	background: lightgreen;
+}
+h1 {
+	color: #003300; /* mal temnejsa kot darkgreen, isti odtenek */
+}
+
+
+/* NAVIGACIJA */
+nav {
+	background: darkgreen;
+}
+nav a {
+    color: 	white;
+}
+/*Obarvanje linkov v navigaciji*/
+nav a:hover {
+    background: white;
+    color: darkgreen;
+}
+/*Obarvanje linka trenutne strani v navigaciji*/
+nav a.selected {
+	background: white;
+    color: darkgreen;
+}
+
+
+body {
+	/* glavni gradient ob straneh */
+	background: linear-gradient(to right, green, white 14%, white 86%, green 100%);
+}
+
+h2 { /* section titles */
+	color: darkgreen;
+	border-bottom-color: darkgreen;
+}
+
+article {
+	background: linear-gradient(to right, yellow, white);
+	border-left-color: gold;
+}
+
+
+
+
+
+
+
+/************************************************************************************************************************************************/
+/* TITLE */
 /************************************************************************************************************************************************/
 
 #title {
-	background: lightgreen;
 	margin: 0;
 	padding: 0.5em;
 	font-size: 2em;
 }
 h1 {
 	text-align: center;
-	font-family: Trebuchet MS, helvetica; /*Dano samo za preizkušnjo*/
 	text-transform: uppercase;
-	color: #003300; /* mal temnejsa kot darkgreen, isti odtenek */
 }
 
+
+
 /************************************************************************************************************************************************/
-/* Navigacija */
+/* NAVIGACIJA */
 /************************************************************************************************************************************************/
 
 nav {
 	overflow: hidden;
-	background: darkgreen;
 	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin-left: 0px;
 	margin-right: 0px;
-	font-family: Arial;
 	font-size: 20px;
 	z-index: 1;
 }
@@ -37,34 +148,18 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: 	white;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
 
-/*Obarvanje linkov v navigaciji*/
-nav a:hover {
-    background: white;
-    color: black;
-}
-
-/*Obarvanje linka trenutne strani v navigaciji*/
-nav a.selected {
-	background: white;
-    color: black;
-}
-
 /************************************************************************************************************************************************/
-/*Telo in divi*/
+/* TELO IN DIVI */
 /************************************************************************************************************************************************/
 
 body {
 	margin: 0px;
 	padding-bottom: 6em;
-	
-	/* glavni gradient ob straneh */
-	background: linear-gradient(to right, green, white 14%, white 86%, green 100%);
 }
 
 div.telo {
@@ -73,32 +168,55 @@ div.telo {
 }
 
 /************************************************************************************************************************************************/
-/*Naslovi in text*/
+/* NASLOVI IN TEXT */
 /************************************************************************************************************************************************/
-
 p {
 	text-align: justify;
-	font-family: Trebuchet MS;
 }
-
 h2 {
-	color: darkgreen;
-	font-family: Trebuchet MS;
-	border-bottom: darkgreen solid 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
 	font-size: 2em;
 }
 
+/************************************************************************************************************************************************/
+/* NOVICKE */
+/************************************************************************************************************************************************/
+/* TODO: to mora v poseben file, ki je samo za index.html */
+
 article {
-	background: linear-gradient(to right, yellow, white);
-	border-left: solid 0.5em gold;
-	padding: 0.3em 1em;
+	border-left-style: solid;
+	border-left-width: 0.5em; /* 8px */
+	padding: 1.3em 2em 0.3em 1em; /* top, right, bottom, left */
+}
+article p { /* vsebina novicke */
+	font-size: 1.2em;
+}
+h3.article.title { /* naslov novicke */
+	font-size: 1.5em;
+	display: inline;
+	margin-right: 0.5em;
+	/*
+	* tukaj je izjema: nastavljena je barva, ampak ni na zacetku zravn drugih.
+	* to je zato, ker text shadow verjetno nebo delou prevelkih problemov glede
+	* barvne sheme, hkrati pa se barve ne da nastavt posebi, in je brezveze da je gor.
+	*/
+	text-shadow: 1px 1px white;
+}
+i.article.date { /* datum objave novicke */
+	font-size: 0.8em;
+}
+h6.article.author:before { /* avtor novicke :before */
+	/* To je treba da je tuki, zato da lazi dajem gor content z javascriptom */
+	/* tega se naceloma ne dela ampak who cares */
+	content: 'Avtor: ';
 }
 
 
 /************************************************************************************************************************************************/
-/*Slike*/
+/* SLIKE */
 /************************************************************************************************************************************************/
-
+/* TODO: to mora v poseben file, ki je samo za index.html */
 #skupinska {
 	width: 40%;
 	float: right;
