@@ -32,6 +32,14 @@ Barvna shema:
 	yellow
 	gold
 	white
+	
+	#001f5b temno modra
+	#0098fc mal bl svetlo modra
+	#000e4a se mal bl temno modra
+	#085afb relativno svetla modra
+	
+	#ff0000 rdeca
+	
 */
 
 
@@ -57,7 +65,47 @@ p {
 /************************************************************************************************************************************************/
 /* BARVE */
 /************************************************************************************************************************************************/
+#title {
+	background: #0098fc;
+}
+h1 {
+	color: #000e4a; /* mal temnejsa kot #001f5b*/
+}
 
+
+/* NAVIGACIJA */
+nav {
+	background: #001f5b;
+}
+nav a {
+    color: 	white;
+}
+/*Obarvanje linkov v navigaciji*/
+nav a:hover {
+    background: white;
+    color: #001f5b;
+}
+/*Obarvanje linka trenutne strani v navigaciji*/
+nav a.selected {
+	background: white;
+    color: #001f5b;
+}
+
+
+body {
+	/* glavni gradient ob straneh */
+	background: linear-gradient(to right, #085afb, white 14%, white 86%, #085afb 100%);
+}
+
+h2 { /* section titles */
+	color: #001f5b;
+	border-bottom-color: #001f5b;
+}
+
+article {
+	background: linear-gradient(to right, yellow, white);
+	border-left-color: #ff0000;
+}
 /*****************/
 /* GLAVNI NASLOV */
 /*****************/
