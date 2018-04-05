@@ -65,6 +65,10 @@ p {
 /************************************************************************************************************************************************/
 /* BARVE */
 /************************************************************************************************************************************************/
+
+/*****************/
+/* GLAVNI NASLOV */
+/*****************/
 #title {
 	background: #0098fc;
 }
@@ -73,7 +77,9 @@ h1 {
 }
 
 
+/**************/
 /* NAVIGACIJA */
+/**************/
 nav {
 	background: #001f5b;
 }
@@ -91,7 +97,7 @@ nav a.selected {
     color: #001f5b;
 }
 
-
+/*Telo*/
 body {
 	/* glavni gradient ob straneh */
 	background: linear-gradient(to right, #085afb, white 14%, white 86%, #085afb 100%);
@@ -106,53 +112,6 @@ article {
 	background: linear-gradient(to right, yellow, white);
 	border-left-color: #ff0000;
 }
-/*****************/
-/* GLAVNI NASLOV */
-/*****************/
-#title {
-	background: lightgreen;
-}
-h1 {
-	color: #003300; /* mal temnejsa kot darkgreen, isti odtenek */
-}
-
-
-/**************/
-/* NAVIGACIJA */
-/**************/
-nav {
-	background: darkgreen;
-}
-nav a {
-    color: 	white;
-}
-/* Obarvanje hovering linkov v navigaciji */
-nav a:hover {
-    background: white;
-    color: darkgreen;
-}
-/* Obarvanje linka trenutne strani v navigaciji */
-nav a.selected {
-	background: white;
-    color: darkgreen;
-}
-
-
-/***********/
-/* VSEBINA */
-/***********/
-body {
-	/* glavni gradient ob straneh */
-	background: linear-gradient(to right, green, white 14%, white 86%, green 100%);
-}
-
-h2 { /* section titles */
-	color: darkgreen;
-	border-bottom-color: darkgreen;
-}
-
-
-
 
 
 /************************************************************************************************************************************************/
