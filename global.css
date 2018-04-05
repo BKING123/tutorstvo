@@ -42,10 +42,10 @@ Barvna shema:
 	
 */
 :root {
-	--temna: #001f5b;
-	--temno-svetla: #0098fc;
-	--svetlo-temna: #000e4a;
-	--svetla: #085afb;
+	--temna: #000e4a;
+	--temno-svetla: #001f5b;
+	--svetlo-temna: #085afb;
+	--svetla: #0098fc;
 }
 
 /************************************************************************************************************************************************/
@@ -78,7 +78,7 @@ p {
 	background: var(--temno-svetla);
 }
 h1 {
-	color: var(--svetlo-temna);
+	color: var(--svetla);
 }
 
 
@@ -86,7 +86,7 @@ h1 {
 /* NAVIGACIJA */
 /**************/
 nav {
-	background: var(--temna);
+	background: var(--svetlo-temna);
 }
 nav a {
     color: white;
