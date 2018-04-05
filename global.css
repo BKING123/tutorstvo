@@ -187,7 +187,7 @@ h2 {
 article {
 	border-left-style: solid;
 	border-left-width: 0.5em; /* 8px */
-	padding: 1.3em 2em 0.3em 1em; /* top, right, bottom, left */
+	padding: 1.3em 3em 0.3em 1em; /* top, right, bottom, left */
 }
 article p { /* vsebina novicke */
 	font-size: 1.2em;
