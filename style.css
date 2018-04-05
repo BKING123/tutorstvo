@@ -1,23 +1,27 @@
 /************************************************************************************************************************************************/
-/*Tutorstvo na GL + h1*/
+/* Title */
 /************************************************************************************************************************************************/
 
-.tutorstvo {
-	margin-left: auto;
-	margin-right: auto;
+#title {
+	background: lightgreen;
+	margin: 0;
+	padding: 0.5em;
+	font-size: 2em;
 }
 h1 {
 	text-align: center;
-	font-family: Papyrus, helvetica; /*Dano samo za preizkušnjo*/
+	font-family: Trebuchet MS, helvetica; /*Dano samo za preizkušnjo*/
+	text-transform: uppercase;
+	color: #003300; /* mal temnejsa kot darkgreen, isti odtenek */
 }
 
 /************************************************************************************************************************************************/
-/*Navigacija*/
+/* Navigacija */
 /************************************************************************************************************************************************/
 
-nav{
+nav {
 	overflow: hidden;
-	background: black;
+	background: darkgreen;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -46,7 +50,7 @@ nav a:hover {
 }
 
 /*Obarvanje linka trenutne strani v navigaciji*/
-nav a.trenutno {
+nav a.selected {
 	background: white;
     color: black;
 }
@@ -57,7 +61,10 @@ nav a.trenutno {
 
 body {
 	margin: 0px;
-	background: linear-gradient(to right, black, white 14%, white 86%, black 100%);
+	padding-bottom: 6em;
+	
+	/* glavni gradient ob straneh */
+	background: linear-gradient(to right, green, white 14%, white 86%, green 100%);
 }
 
 div.telo {
@@ -75,15 +82,24 @@ p {
 }
 
 h2 {
+	color: darkgreen;
 	font-family: Trebuchet MS;
-	border-bottom: black solid 2px;
+	border-bottom: darkgreen solid 2px;
+	font-size: 2em;
 }
+
+article {
+	background: linear-gradient(to right, yellow, white);
+	border-left: solid 0.5em gold;
+	padding: 0.3em 1em;
+}
+
 
 /************************************************************************************************************************************************/
 /*Slike*/
 /************************************************************************************************************************************************/
 
-#slikca {
+#skupinska {
 	width: 40%;
 	float: right;
 }
