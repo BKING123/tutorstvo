@@ -2,17 +2,17 @@
 /*
 ===============
 External fonts:
-
+	
 	font-family: 'Open Sans', sans-serif; 		// 
-
-	font-family: 'Roboto', sans-serif; 			// dobra za navaden text, zgleda lepse kot Helvetica
-
-	font-family: 'Source Sans Pro', sans-serif; // podobna kot Roboto, bolj stylish, a malo tezje berljiva
+	
+*	font-family: 'Roboto', sans-serif; 			// dobra za navaden text, zgleda lepse kot Helvetica
+	
+*	font-family: 'Source Sans Pro', sans-serif; // podobna kot Roboto, bolj stylish, a malo tezje berljiva
 	
 	font-family: 'PT Mono', monospace; 			// monospace font - rabimo za login, namesto Courierja
-
-	font-family: 'Work Sans', sans-serif; 		// zelo tanka pisava, primerna za citate ipd.
-
+	
+*	font-family: 'Work Sans', sans-serif; 		// zelo tanka pisava, primerna za citate ipd.
+	
 POMEMBNO!!!
 Ce rabimo sumnike za kaksnen font, al pa bold/italic style, je treba dodat! (odpri nov issue na githubu)
 
