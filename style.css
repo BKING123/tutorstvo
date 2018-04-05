@@ -37,6 +37,24 @@ article { /* novicke */
 /* STRUKTURA */
 /************************************************************************************************************************************************/
 
+/****************/
+/* PREDSTAVITEV */
+/****************/
+#predstavitev {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 1em 0;
+}
+
+#skupinska {
+	width: 100%;
+	margin: 0;
+}
+#vsebina {
+	padding-right: 1em;
+	font-size: 1.1em;
+}
+
 /***********/
 /* NOVICKA */
 /***********/
@@ -69,11 +87,3 @@ h6.article.author:before { /* avtor novicke :before */
 }
 
 
-
-/*********/
-/* SLIKE */
-/*********/
-#skupinska {
-	width: 40%;
-	float: right;
-}
