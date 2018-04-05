@@ -99,7 +99,7 @@ nav a:hover {
 /*Obarvanje linka trenutne strani v navigaciji*/
 nav a.selected {
 	background: white;
-    color: var(--temna);
+    color: var(--svetlo-temna);
 }
 
 /*Telo*/
