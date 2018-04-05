@@ -15,3 +15,7 @@ Cilji:
 - vzdrzljiva koda; stran lahko za nami ostane se vec let.
 - odzivna stran, ki se prilagaja na vse velikosti ekranov
 
+
+V delu sta trenutno 2 prototipa, `gradient-blue` in `master`.\
+Vsak stalni branch predstavlja svoj prototip.\
+*Novi prototipi zazeljeni.*
