@@ -41,7 +41,12 @@ Barvna shema:
 	#ff0000 rdeca
 	
 */
-
+:root {
+	--temna: #001f5b;
+	--temno-svetla: #0098fc;
+	--svetlo-temna: #000e4a;
+	--svetla: #085afb;
+}
 
 /************************************************************************************************************************************************/
 /* PISAVE */
@@ -70,10 +75,10 @@ p {
 /* GLAVNI NASLOV */
 /*****************/
 #title {
-	background: #0098fc;
+	background: var(--temno-svetla);
 }
 h1 {
-	color: #000e4a; /* mal temnejsa kot #001f5b*/
+	color: var(--svetlo-temna);
 }
 
 
@@ -81,7 +86,7 @@ h1 {
 /* NAVIGACIJA */
 /**************/
 nav {
-	background: #001f5b;
+	background: var(--temna);
 }
 nav a {
     color: white;
@@ -89,28 +94,28 @@ nav a {
 /*Obarvanje linkov v navigaciji*/
 nav a:hover {
     background: white;
-    color: #001f5b;
+    color: var(--temna);
 }
 /*Obarvanje linka trenutne strani v navigaciji*/
 nav a.selected {
 	background: white;
-    color: #001f5b;
+    color: var(--temna);
 }
 
 /*Telo*/
 body {
 	/* glavni gradient ob straneh */
-	background: linear-gradient(to right, #085afb, white 14%, white 86%, #085afb 100%);
+	background: linear-gradient(to right, var(--svetla), white 14%, white 86%, var(--svetla) 100%);
 }
 
 h2 { /* section titles */
-	color: #001f5b;
-	border-bottom-color: #001f5b;
+	color: var(--temna);
+	border-bottom-color: var(--temna);
 }
 
 article {
 	background: linear-gradient(to right, yellow, white);
-	border-left-color: #ff0000;
+	border-left-color: red;
 }
 
 
