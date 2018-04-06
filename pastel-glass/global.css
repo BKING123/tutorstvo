@@ -56,10 +56,24 @@ body {
 
 #title {
 	background-color: var(--rdeca);
-	padding: 1em;
+	padding: 1.5em 1em;
+	font-size: 1.5em;
 	width: 30%;
+	min-width: 400px;
 	color: white;
+	text-align: right;
 }
+
+nav {
+	min-width: 10em;
+}
+nav a {
+	display: block;
+	margin-top: 0.5em;
+	text-decoration: none;
+}
+
+
 
 #body {
 	display: flex;
@@ -70,10 +84,37 @@ body {
 #content {
 	padding: 1em;
 }
-
-
 h2 {
 	color: var(--rdeca);
-	border-bottom: solid 2px var(--rdeca);
+	border-bottom: solid 4px var(--rdeca);
+	font-size: 2em;
 }
+
+
+
+
+hr {
+	border-top-style: none;
+	border-bottom: 1px solid lightgray;
+}
+article.novica {
+	padding: 1em 0.5em 0 0.5em; 
+}
+.novica.date {
+	color: lightgray;
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+}
+.novica.title {
+	font-family: 'Work Sans';
+	font-size: 1.7em;
+	margin: 0.5em 0;
+	color: var(--rdeca);
+}
+/* psevdoelement pred novica:avtorjem */
+.novica.author:before {
+	content: "Avtor: "; /* tega se naceloma ne dela ampak Yon bo verjetno rabu za backend*/
+}
+
+
 
