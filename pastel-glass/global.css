@@ -24,6 +24,56 @@ Predlog: fonte, kot so PT Mono lahko includamo samo na login strani za tutorje
 
 =============
 Barvna shema:
+	#f4858e // rdeca
+	#bfe2ca // zelena
+	#a6daef // modra
+	#d0e2ec // siva
+	#fed88f // oranzna
+	#ffffff // bela
+	snow
+	
 	tukaj dodaj *vse* barve, ki jih uporabis na spletni strani
 	
 */
+:root {
+	--rdeca: #f4858e;
+	--zelena: #bfe2ca;
+	--modra: #a6daef;
+	--siva: #d0e2ec;
+	--oranzna: #fed88f;
+}
+
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 2em 0;
+	font-family: 'Roboto';
+	
+	border-left: 1em solid var(--rdeca);
+	background-color: snow;
+}
+
+#title {
+	background-color: var(--rdeca);
+	padding: 1em;
+	width: 30%;
+	color: white;
+}
+
+#body {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+#content {
+	padding: 1em;
+}
+
+
+h2 {
+	color: var(--rdeca);
+	border-bottom: solid 2px var(--rdeca);
+}
+
