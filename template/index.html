@@ -3,29 +3,30 @@
 	<head>
 		<title>Tutorstvo GL</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="Uradna stran Tutorstva na GL">
+		<meta name="description" content="Uradna stran Tutorstva GL">
 		<meta name="keywords" content="Ledina, Tutorji, najjaci">
-		<meta name="author" content="Yon Ploj, plojyon, BKING">
+		<meta name="author" content="Yon Ploj, plojyon, BKING"> <!-- ne pozabite se dodati kot avtor! -->
 		<meta name="viewpoint" content="width=device-vidth,initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="global.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<!-- font, ki nam da hisico -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div id="title">
 			<h1>Tutorstvo Ledina</h1>
 		</div>
-		<nav id="menu">
-			<a id="gumb" class="left selected" href="index.html"><i class="fa fa-home"><!--to je character z hisico--></i></a>
-			<a href="https://www.ledina.si/" target="_blank" class="left">GL</a><!-- se odpre v novem zavihku -->
-			
-			<!-- NA DESNI STRANI (v obratnem vrstem redu) -->
-			<a href="prijava" class="right">Poišči tutorja</a>
-			<a href="kdo_smo" class="right">Kdo smo</a>
-			<a href="#novice" class="right">Novice</a>
+		<nav>
+			<a class="selected" href="index.html"><i class="fa fa-home"><!--to je character z hisico--></i></a>
+			<a href="https://www.ledina.si/" target="_blank">GL</a><!-- se odpre v novem zavihku -->
+			<a href="#novice">Novice</a>
+			<a href="kdo_smo">Kdo smo</a>
+			<a href="prijava/dijak">Poišči tutorja</a>
+			<a href="prijava/tutor">Postani tutor</a>
 		</nav>
-		<div class="telo">
-			<!-- first para -->
+		<div id="content">
+			<!-- first paragraph -->
 			<h2>Predstavitev</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae diam purus. Proin eu molestie tellus. Interdum et malesuada 
 			fames ac ante ipsum primis in faucibus. Donec venenatis quis enim pharetra euismod. Sed accumsan mauris eros, sit amet dapibus lorem
@@ -35,7 +36,7 @@
 			efficitur et.</p>
 			
 			<!-- placeholder novicka -->
-			<article id="novica_34"><!-- IDje bom verjetno rabu v backendu -->
+			<article id="novica_34"><!-- IDje bom verjetno rabu v backendu -Yon -->
 				<h3 class="article title">Naslov novice</h3><i class="article date">(24.4.2019)</i>
 				<p>Pellentesque gravida metus eu elementum elementum. Fusce placerat tempus eros a rutrum. Aliquam aliquam imperdiet posuere. Nam quis
 				odio ut purus egestas euismod. Donec congue imperdiet felis, et varius mi suscipit non. Phasellus dapibus, ex nec tempus tristique,
@@ -86,7 +87,6 @@
 			urna, vel blandit velit sem vitae dolor. Morbi viverra at orci eu dictum. Fusce ante eros, faucibus non turpis ut, suscipit blandit
 			magna. Praesent rutrum facilisis feugiat. Cras sagittis aliquet elementum. Sed lacinia, felis in rhoncus varius, justo felis tincidunt
 			ex, sit amet maximus augue magna nec nulla. Nulla euismod erat at lacus scelerisque maximus.</p>
-			
 			
 		</div>
 	</body>
