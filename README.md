@@ -35,6 +35,11 @@ Vsak stalni branch predstavlja svoj prototip.\
 - index.html     // glavna stran
 - style.css      // css za glavno stran
 - global.css     // css, ki je v vseh dokumentih - tukaj so vsi stili, ki se uporabljajo po celotni spletni strani
++ media
+  - [media]      // slike, videi, glasba in druga multimedia
++ kdo_smo
+  - index.html   // stran s podatki o nas
+  - style.css    // stil za sosenji index.html
 + prijava
   - index.html   // stran, kjer te vprasa ali bi se prijavil kot dijak ali tutor
   - style.css    // css za sosednji index.html
@@ -44,6 +49,4 @@ Vsak stalni branch predstavlja svoj prototip.\
   + tutor
     - index.html // stran za prijavo tutorjev
     - style.css  // css za sosednji index.html
-+ media
-    - [media]    // slike, videi, glasba in druga multimedia
 ```
