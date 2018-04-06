@@ -1,21 +1,49 @@
 # Tutorstvo
 [Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/)
 
-**Prosim sledite file schemi**\
-Vsak subpage je svoj directory, notr je index.html\
-Slike, SVGji, videi in druga multimedia gre v root/media directory
+Opomnik:
+--------
+**Vsi udelezenci projekta si prizadevamo za strpnost do ostalih,
+cetudi se nivoji nasih znanj razlikujejo.**\
+Smo tutorji, predstavljamo skupnost oz. organizacijo, ki se *specializira*
+prav v poucevanju sovrstnikov.
 
-**Nekomentirana koda** bo odstranjena oz. ne bo sprejeta.\
-Commiti samo s kometarji so dobrodosli.
+### Dokumentirajte VSE!
+Vsak commit mora imeti naslov, ki na kratko opise spremembo,
+v telesu pa naj bo podroben opis vsega, kar je bilo spremenjeno,
+dodano ali odstranjeno.
+
+Tudi commiti, ki dodajo samo komentarje so dobrodosli.
 
 Cilji:
 ------
-- vpadljivost, estetika; privabljamo bodoce stranke!
-- hitrost, odzivnost in preprostost.
-- vzdrzljiva koda; stran lahko za nami ostane se vec let.
-- odzivna stran, ki se prilagaja na vse velikosti ekranov
+1. vpadljivost, estetika; privabljamo bodoce stranke!
+2. hitrost, odzivnost in preprostost.
+3. vzdrzljiva koda (to pomeni koda, ki jo je lahko vzdrzevati in prilagajati - komentarji in primerna dokumentacija sta kljucega pomena); stran lahko za nami ostane se vec let.
+4. odzivna stran, ki se prilagaja na vse velikosti ekranov
 
+OP: Komentarjev ni nikoli prevec
 
 V delu sta trenutno 2 prototipa, `gradient-blue` in `master`.\
 Vsak stalni branch predstavlja svoj prototip.\
 *Novi prototipi zazeljeni.*
+
+<br><br>
+
+## File schema:
+```
+- index.html     // glavna stran
+- style.css      // css za glavno stran
+- global.css     // css, ki je v vseh dokumentih - tukaj so vsi stili, ki se uporabljajo po celotni spletni strani
++ prijava
+  - index.html   // stran, kjer te vprasa ali bi se prijavil kot dijak ali tutor
+  - style.css    // css za sosednji index.html
+  + dijak
+    - index.html // stran za prijavo dijakov
+    - style.css  // css za sosednji index.html
+  + tutor
+    - index.html // stran za prijavo tutorjev
+    - style.css  // css za sosednji index.html
++ media
+    - [media]    // slike, videi, glasba in druga multimedia
+```
