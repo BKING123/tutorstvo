@@ -1,5 +1,9 @@
 # Tutorstvo
-[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/)
+Uradna spletna stran Tutorstva GL
+
+Prototipi:
+- [gradient-blue](https://plojyon.github.io/tutorstvo/gradient-blue)
+- [template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
 
 Opomnik:
 --------
