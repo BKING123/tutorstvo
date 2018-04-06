@@ -2,8 +2,9 @@
 Uradna spletna stran Tutorstva GL
 
 Prototipi:
-- [gradient-blue](https://plojyon.github.io/tutorstvo/gradient-blue)
-- [template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
+- [gradient-blue](https://plojyon.github.io/tutorstvo/gradient-blue) Avtor: Domen [+Yon manjsi popravki]
+
+[Template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
 
 Opomnik:
 --------
@@ -28,8 +29,8 @@ Cilji:
 
 OP: Komentarjev ni nikoli prevec
 
-V delu sta trenutno 2 prototipa, `gradient-blue` in `master`.\
-Vsak stalni branch predstavlja svoj prototip.\
+V delu sta trenutno 2 prototipa, `gradient-blue` in `[neimenovan]`.\
+Vsaka mapa v repositoriju predstavlja svoj prototip.\
 *Novi prototipi zazeljeni.*
 
 <br><br>
