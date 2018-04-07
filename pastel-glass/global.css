@@ -64,15 +64,56 @@ body {
 	text-align: right;
 }
 
-nav {
+
+nav#glassy {
 	min-width: 10em;
+	margin-right: 2em;
+	padding: 1em;
+	position: sticky;
+	top: 1em;
+	
+	background-color: rgba(170,93,99,0.1);
+	border: 1px solid var(--rdeca);
+	border-radius: 5px;
+	filter: drop-shadow(10px 10px 2px rgba(170,93,99, .4));
 }
-nav a {
+nav#glassy a {
 	display: block;
 	margin-top: 0.5em;
 	text-decoration: none;
+	font-family: 'Righteous';
+	text-transform: uppercase;
+	color: var(--rdeca);
+	transition: transform .1s ease-out, text-shadow .1s ease-out;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+}
+nav#glassy a:hover {
+	transition: transform .1s ease-out, text-shadow .1s ease-out;
+	transform: translate(-5px, -5px);
+	text-shadow: 5px 5px 2px rgba(0,0,0,.7), 1px 1px 0 rgba(0,0,0,.6);
+}
+nav#glassy a:first-child {
+	margin: 0;
 }
 
+
+
+
+
+nav#blocky a {
+	display: block;
+	margin-top: 1em;
+	background-color: var(--rdeca);
+	color: white;
+	width: 15%;
+	text-decoration: none;
+	padding: 0.5em;
+	text-align: right;
+	transition: width .1s ease-out;
+}
+nav#blocky a:hover {
+	width: 20%;
+}
 
 
 #body {
