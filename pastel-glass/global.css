@@ -64,6 +64,9 @@ body {
 	text-align: right;
 }
 
+a {
+	outline: 0;
+}
 
 nav#glassy {
 	min-width: 10em;
