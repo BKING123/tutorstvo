@@ -21,6 +21,16 @@ dodano ali odstranjeno.
 
 Tudi commiti, ki dodajo samo komentarje so dobrodosli.
 
+Nujni elementi strani:
+----------------------
+- Naslov "Tutorstvo GL", "Tutorstvo Ledina", "Tutorstvo Gimnazije Ledina" ali "Tutorstvo"
+- Navigacija z vsaj eno povezavo na prijavo (lahko tudi dve; eno kot tutor, eno kot dijak. ce bo samo ena, naj gre na razdelitveno stran) in povezavo na <www.ledina.si>
+- Predstavitven paragraph, kjer bo kratek opis tutorstva
+- Template za novice (kako zgleda novicka na strani?)
+
+**Protip**: slike *izjemno* popestrijo kakrsen koli dizajn; dizajn brez slik je zelo omejen in tezko doseze estetski nivo dizajna s slikami;
+priporocam preproste grafike, po moznosti vektorske (.svg), ali generic background image - pazi na avtorske pravice!
+
 Cilji:
 ------
 1. vpadljivost, estetika; privabljamo bodoce stranke!
