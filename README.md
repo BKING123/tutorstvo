@@ -8,6 +8,8 @@ Prototipi:
 
 [Template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
 
+*Novi prototipi zazeljeni.*
+
 Opomnik:
 --------
 **Vsi udelezenci projekta si prizadevamo za strpnost do ostalih,
@@ -40,10 +42,6 @@ Cilji:
 4. odzivna stran, ki se prilagaja na vse velikosti ekranov
 
 OP: Komentarjev ni nikoli prevec
-
-V delu sta trenutno 2 prototipa, `gradient-blue` in `[neimenovan]`.\
-Vsaka mapa v repositoriju predstavlja svoj prototip.\
-*Novi prototipi zazeljeni.*
 
 <br><br>
 
