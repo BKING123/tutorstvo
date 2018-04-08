@@ -4,6 +4,7 @@ Uradna spletna stran Tutorstva GL
 Prototipi:
 - [gradient-blue](https://plojyon.github.io/tutorstvo/gradient-blue) Avtor: Domen [+Yon manjsi popravki]
 - [pastel-glass](https://plojyon.github.io/tutorstvo/pastel-glass) Avtor: Yon
+- [fake-ledina](https://plojyon.github.io/tutorstvo/fake-ledina) Avtor: Yon
 
 [Template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
 
