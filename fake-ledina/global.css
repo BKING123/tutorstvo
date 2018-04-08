@@ -76,15 +76,15 @@ nav a {
 }
 nav a:hover {
 	background-color: var(--svetlo-siva);
-	text-decoration: none;
+	text-decoration: none; /* fuj */
 }
-nav a.selected {
+nav a.selected { /* stran, na kateri se nahajamo */
 	background-color: var(--blue);
 	color: white;
 }
 
 
-hr {
+hr { /* tista modra crta ki pri ledina.si ne dela pravilno */
 	border: none;
 	background-image: url(https://www.ledina.si/images/headers/blue_line_thin.png);
 	height: 3px;
@@ -92,7 +92,7 @@ hr {
 }
 
 
-h3.article a {
+h3.article a { /* <a> znotraj <h3 class="article"> => torej naslov novicke (ki je anchor) */
 	font-family: "Sans", Sans-Serif;
 	font-weight: bold;
 	font-size: 22px;
@@ -101,21 +101,21 @@ h3.article a {
 
 
 
-#content {
+#content { /* plac, kjer so novicke in ves text */
 	width: 75%;
 }
-aside {
+aside { /* povezave, login, recent news, ipd */
 	float: right;
 	width: 25%;
 }
-.well {
+.well { /* siv predel v aside; t.i. 'vodnjak' */
 	background-color: var(--ultra-svetlo-siva);
 	border: 1px solid var(--temno-siva);
 	border-radius: 4px;
 	padding: 1em;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
-.well h3 {
+.well h3 { /* title of a 'well' */
 	margin: 0;
 	border-bottom: 1px solid var(--svetlo-siva);
 }
@@ -123,40 +123,45 @@ aside {
 
 
 
-.formInput {
+.formInput { /* span, ki zdruzuje <input> in symbol na levi */
 	height: 2em;
 	display: flex;
 	margin: 0.5em;
-	
 }
 
+/* username in password input */
 input[type="text"], input[type="password"] {
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075); /* inset shadow (navznoter) */
 	
+	/* border */
 	border: 1px solid var(--temno-siva);
-	border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0; /* zaobljeni robovi: dol desno in gor desno */
 	border-style: solid solid solid none;
 	
 	width: 75%;
-	flex: 1;
-	padding: 0 0.5em;
+	flex: 1; /* to je element, ki se razsiri po potrebi, medtem ko ikone ostanejo fiksne */
+	padding: 0 0.5em; /* presledek na levi in desni */
 }
 span#userIcon, span#passIcon {
 	font-family: 'IcoMoon';
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	line-height: 200%;
-	padding: 0 0.5em;
+	line-height: 200%; /* da je ikona vertikalno centrirana */
+	padding: 0 0.5em; /* presledek na levi in desni */
 	
 	border: 1px solid var(--temno-siva);
-	border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px; /* zaobljeni robovi: dol levo in gor levo */
 }
 
 
-button {
+button { /* 'Prijava' gumb */
 	background-color: var(--blue);
-	border: 1px solid gray;
-	border-radius: 5px;
-	padding: 0.5em 0.7em;
-	color: white;
+	
+	border: 1px solid gray; /* okvir */
+	border-radius: 5px; /* zaobljeni robovi */
+	
+	padding: 0.5em 0.7em; /* presledki: gor in dol 0.5em, levo in desno 0.7em */
+	
+	color: white; /* text-color */
+	
 	margin: 0.5em;
 }
