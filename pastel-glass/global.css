@@ -106,10 +106,9 @@ nav.glassy a {
 	text-decoration: none; /* fuj */
 	text-shadow: 1px 1px 0 rgba(0,0,0,.6); /* senca texta */
 	
-	transition: transform .1s ease-out, text-shadow .1s ease-out; /* vse naj se premika .1s */
+	transition: transform .1s ease-out, text-shadow .1s ease-out; /* vse naj se premika 0.1s */
 }
 nav.glassy a:hover {
-	transition: transform .1s ease-out, text-shadow .1s ease-out; /* tudi nazaj naj se premika .1s */
 	transform: translate(-5px, -5px); /* naj se premakne 5px gor levo ce hoveramo */
 	text-shadow: 5px 5px 2px rgba(0,0,0,.7), 1px 1px 0 rgba(0,0,0,.6); /* dodatna senca pade 5px dol desno, na stekleno povrsino  */
 }
