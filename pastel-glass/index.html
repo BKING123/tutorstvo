@@ -13,20 +13,21 @@
 		<!-- font, ki nam da hisico -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
+		<!-- nedokumentirani dodani fonti; kandidati za navigacijo -->
 		<link href="https://fonts.googleapis.com/css?family=Audiowide|Baumans|Bowlby+One+SC|Bungee|Bungee+Shade|Expletus+Sans:400,700|Faster+One|Gruppo|Limelight|McLaren|Megrim|Monoton|Righteous|Vast+Shadow" rel="stylesheet"> 
 	</head>
 	<body>
 		<div id="title">
 			<h1>Tutorstvo Ledina</h1>
 		</div>
-		<nav id="blocky">
+		<nav class="blocky"> <!-- "blocky" navigation; the extending one under the title -->
 			<a href="kdo_smo">Kdo smo</a>
 			<a href="kdo_smo">FAQ</a>
 			<a href="prijava">Prijava</a>
 		</nav>
 		<div id="body">
 			<section>
-				<nav id="glassy">
+				<nav class="glassy"> <!-- "glassy" navigation; the one that imitates a floating glass pane -->
 					<a class="selected" href="index.html"><i class="fa fa-home"><!--to je character z hisico--></i> Domov</a>
 					<a href="https://www.ledina.si/" target="_blank">GL</a><!-- se odpre v novem zavihku -->
 					<a href="#novice">Novice</a>
@@ -140,7 +141,7 @@
 				ex, sit amet maximus augue magna nec nulla. Nulla euismod erat at lacus scelerisque maximus.</p>
 			</section>
 		</div>
-		<nav id="blocky">
+		<nav class="blocky"> <!-- NAPAKA: dva elementa ne smeta met istega IDja ('blocky' nav + 'blocky' nazaj gor) -->
 			<a href="#top">Nazaj gor</a>
 		</nav>
 	</body>

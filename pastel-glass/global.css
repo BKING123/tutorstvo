@@ -30,12 +30,13 @@ Barvna shema:
 	#d0e2ec // siva
 	#fed88f // oranzna
 	#ffffff // bela
-	snow
+	snow 	// "snezna" - to je glavni background color
 	
 	tukaj dodaj *vse* barve, ki jih uporabis na spletni strani
 	
 */
 :root {
+	/* nastavljanje spremenljivk */
 	--rdeca: #f4858e;
 	--zelena: #bfe2ca;
 	--modra: #a6daef;
@@ -43,121 +44,146 @@ Barvna shema:
 	--oranzna: #fed88f;
 }
 
-
 body {
 	height: 100%;
-	margin: 0;
-	padding: 2em 0;
+	margin: 0; /* normalizacja */
+	padding: 2em 0; /* 2em na vrhu in dnu */
 	font-family: 'Roboto';
 	
-	border-left: 1em solid var(--rdeca);
-	background-color: snow;
-}
-
-#title {
-	background-color: var(--rdeca);
-	padding: 1.5em 1em;
-	font-size: 1.5em;
-	width: 30%;
-	min-width: 400px;
-	color: white;
-	text-align: right;
+	border-left: 1em solid var(--rdeca); /* glavni border na levi */
+	background-color: snow; /* bela je ew */
 }
 
 a {
-	outline: 0;
-}
-
-nav#glassy {
-	min-width: 10em;
-	margin-right: 2em;
-	padding: 1em;
-	position: sticky;
-	top: 1em;
-	
-	background-color: rgba(170,93,99,0.1);
-	border: 1px solid var(--rdeca);
-	border-radius: 5px;
-	filter: drop-shadow(10px 10px 2px rgba(170,93,99, .4));
-}
-nav#glassy a {
-	display: block;
-	margin-top: 0.5em;
-	text-decoration: none;
-	font-family: 'Righteous';
-	text-transform: uppercase;
-	color: var(--rdeca);
-	transition: transform .1s ease-out, text-shadow .1s ease-out;
-	text-shadow: 1px 1px 0 rgba(0,0,0,.6);
-}
-nav#glassy a:hover {
-	transition: transform .1s ease-out, text-shadow .1s ease-out;
-	transform: translate(-5px, -5px);
-	text-shadow: 5px 5px 2px rgba(0,0,0,.7), 1px 1px 0 rgba(0,0,0,.6);
-}
-nav#glassy a:first-child {
-	margin: 0;
+	outline: 0; /* ko kliknes na link se po defaultu naredi outline - tega nocm */
 }
 
 
-
-
-
-nav#blocky a {
-	display: block;
-	margin-top: 1em;
+#title {
 	background-color: var(--rdeca);
 	color: white;
-	width: 15%;
-	text-decoration: none;
-	padding: 0.5em;
+	
+	padding: 1.5em 1em;
 	text-align: right;
-	transition: width .1s ease-out;
-}
-nav#blocky a:hover {
-	width: 20%;
+	
+	font-size: 1.5em;
+	width: 30%;
+	min-width: 400px; /* ce 30% ekrana ni dovolj, se neha manjsati*/
 }
 
 
+/* body je flexbox, da se sirina glassy navigacije in glavnega dela telesa 
+prilagajata drug drugemu */
 #body {
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-
-#content {
+/********************/
+/* GLASSY NAVIGATION*/
+/********************/
+/* to je tist ob strani k je tko k steklena plosca */
+nav.glassy {
+	min-width: 10em; /* da se ne zmanjsa prevec */
+	margin-right: 2em; /* od desne stene */
 	padding: 1em;
+	
+	position: sticky; /* ce scrollamo tko, da ga ni vec na ekranu, nam sledi*/
+	top: 1em; /* ko sledi, je 1em od vrha ekrana */
+	
+	background-color: rgba(170,93,99,0.1); /* mal temnejsa --rdeca */
+	border: 1px solid var(--rdeca);
+	border-radius: 5px;
+	filter: drop-shadow(10px 10px 2px rgba(170,93,99, .4)); /* senca */
 }
-h2 {
+nav.glassy a {
+	display: block; /* vsak v svojo vrstico */
+	margin-top: 0.5em;
+	
+	color: var(--rdeca);
+	font-family: 'Righteous';
+	text-transform: uppercase;
+	text-decoration: none; /* fuj */
+	text-shadow: 1px 1px 0 rgba(0,0,0,.6); /* senca texta */
+	
+	transition: transform .1s ease-out, text-shadow .1s ease-out; /* vse naj se premika .1s */
+}
+nav.glassy a:hover {
+	transition: transform .1s ease-out, text-shadow .1s ease-out; /* tudi nazaj naj se premika .1s */
+	transform: translate(-5px, -5px); /* naj se premakne 5px gor levo ce hoveramo */
+	text-shadow: 5px 5px 2px rgba(0,0,0,.7), 1px 1px 0 rgba(0,0,0,.6); /* dodatna senca pade 5px dol desno, na stekleno povrsino  */
+}
+nav.glassy a:first-child { /* prvi link v navigaciji */
+	margin: 0; /* vsi linki majo margin-top: 0.5em, razen prvega, ki se nesme oddaljit, da ostane simetrija*/
+}
+
+
+
+
+/********************/
+/* BLOCKY NAVIGATION*/
+/********************/
+/* to je tist pod naslovom k se stegne vn */
+nav.blocky a {
+	display: block; /* vsak v svojo vrstico */
+	margin-top: 1em;
+	
+	text-align: right;
+	padding: 0.5em;
+	
+	background-color: var(--rdeca);
+	color: white;
+	text-decoration: none; /* fuj */
+	
+	width: 15%;
+	transition: width .1s ease-out; /* sirina naj se spreminja 0.1s*/
+}
+nav.blocky a:hover {
+	width: 20%; /* ce hoveramo, naj bo sirok +5% */
+}
+
+
+
+
+
+#content { /* vsebina: novicke, predstavitev, ipd */
+	padding: 1em; /* odmik od borderja na desni */
+}
+
+
+h2 { /* glavni podnaslov (v tem primeru "Predstavitev") */
+	font-size: 2em;
 	color: var(--rdeca);
 	border-bottom: solid 4px var(--rdeca);
-	font-size: 2em;
 }
 
 
-
-
-hr {
+/***********/
+/* NOVICKE */
+/***********/
+hr { /* horizontalna crta, ki locuje novicke */
 	border-top-style: none;
 	border-bottom: 1px solid lightgray;
 }
-article.novica {
-	padding: 1em 0.5em 0 0.5em; 
+
+article.novica { /* novica mora bit <article class="novica"> */
+	padding: 1em 0.5em 0 0.5em; /* je malo bolj noter kot drug text*/
 }
-.novica.date {
+article.novica span.novica.date { /* datum objave (mora bit <span class="novica date"> znotraj <article class="novica">) */
 	color: lightgray;
 	font-family: 'Source Sans Pro';
 	font-weight: bold;
 }
-.novica.title {
+article.novica h3.novica.title { /* naslov novice (mora bit <h3 class="novica title"> znotraj <article class="novica">) */
 	font-family: 'Work Sans';
 	font-size: 1.7em;
-	margin: 0.5em 0;
+	margin: 0.5em 0; /* zgoraj in spodaj 0.5em (=8px), levo in desno pa 0 */
 	color: var(--rdeca);
 }
+
 /* psevdoelement pred novica:avtorjem */
-.novica.author:before {
-	content: "Avtor: "; /* tega se naceloma ne dela ampak Yon bo verjetno rabu za backend*/
+article.novica h3.novica.author:before {
+	content: "Avtor: "; /* tega se naceloma ne dela ampak Yon bo verjetno rabu za backend */
 }
 
 
