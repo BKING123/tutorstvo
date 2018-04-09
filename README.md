@@ -6,6 +6,7 @@ Prototipi:
 - [pastel-glass](https://plojyon.github.io/tutorstvo/pastel-glass) Avtor: Yon
 - [fake-ledina](https://plojyon.github.io/tutorstvo/fake-ledina) Avtor: Yon
 - [colibri](https://plojyon.github.io/tutorstvo/colibri) Avtor: Yon
+- [slite](https://plojyon.github.io/tutorstvo/slite) Avtor: Yon
 
 [Template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
 
