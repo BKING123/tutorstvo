@@ -152,23 +152,23 @@ aside .floaty {
 svg {
 	display: block;
 	width: 100%;
-	height: 30px;
+	height: 50px;
 }
 svg.top {
-	fill: gray;
+	fill: LemonChiffon;
 	background: white;
-	stroke: gray;
+	stroke: LemonChiffon;
 }
 svg.bottom {
 	fill: white;
-	background: gray;
+	background: LemonChiffon;
 	stroke: white;
 }
 
 
 
 .quoteShow {
-	background-color: gray;
+	background-color: LemonChiffon;
 	color: white;
 	width: 100%;
 	padding: 2em;
@@ -178,12 +178,14 @@ svg.bottom {
 	font-family: 'Dosis', cursive;
 	font-weight: bold;
 	font-size: 2em;
-	color: rgba(255,255,255,0.7);
+	color: #FCCA1C;/*rgba(0,0,0,0.5);*/
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.4);*/
+	/*text-shadow: 1px 1px 1px black;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	animation: fadein 0.5s;
+	animation: fadein 1.5s;
 }
 @keyframes fadein {
     from {opacity: 0}
@@ -200,6 +202,7 @@ svg.bottom {
 	border-radius: 100%;
 	height: 3em;
 	margin-right: 1em;
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.4);
 }
 .quote button {
 	transition: background-color 0.1s ease-out;
@@ -207,7 +210,7 @@ svg.bottom {
 	width: 2em;
 	vertical-align: center;
 	background-color: transparent;
-	color: white;
+	color: black;
 	border: none;
 	border-radius: 10%;
 	margin: auto 2em;
@@ -217,6 +220,7 @@ svg.bottom {
 	background-color: rgba(0,0,0,0.2);
 }
 .quoteShow:hover button:hover {
+	color: white;
 	background-color: rgba(0,0,0,0.7);
 }
 

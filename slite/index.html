@@ -96,7 +96,7 @@
 			<section class="quoteShow">
 				<!-- Quotes -->
 				<div class="quote">
-					<button onclick="plusDivs(-1)">&#10094;</button>
+					<button onclick="plusDivs(-1, true)">&#10094;</button>
 						<img src="media/shakespeare.jpg" class="round">
 						<div>"To be or not to be, that is the question:
 							Whether 'tis nobler in the mind to suffer
@@ -107,34 +107,36 @@
 							The heart-ache and the thousand natural shocks
 							That flesh is heir to; 'tis a consummation
 							Devoutly to be wished. To die, to sleep .-"<span class="author">Shakespeare</span></div>
-					<button onclick="plusDivs(+1)">&#10095;</button>
+					<button onclick="plusDivs(+1, true)">&#10095;</button>
 				</div>
 				<div class="quote">
-					<button onclick="plusDivs(-1)">&#10094;</button>
+					<button onclick="plusDivs(-1, true)">&#10094;</button>
 						<img src="media/jatan.jpg" class="round">
 						<div>"Kaj je smisu tega da se ucim kemijo ce mi bo Cebinka itak dala 5??"<span class="author">Yon, 2.g</span></div>
-					<button onclick="plusDivs(+1)">&#10095;</button>
+					<button onclick="plusDivs(+1, true)">&#10095;</button>
 				</div>
 				<div class="quote">
-					<button onclick="plusDivs(-1)">&#10094;</button>
+					<button onclick="plusDivs(-1, true)">&#10094;</button>
 						<img src="media/anonymous.png" class="round">
 						<div>"Tutorstvo mi je zelo pomagalo priti do moje zelo zeljene petice! Zdaj mi mami koncno spet da za jest. Hvala tutorckii!!!"<span class="author">Francka, 2.g</span></div>
-					<button onclick="plusDivs(+1)">&#10095;</button>
+					<button onclick="plusDivs(+1, true)">&#10095;</button>
 				</div>
 				</div>
 				<div class="quote">
-					<button onclick="plusDivs(-1)">&#10094;</button>
+					<button onclick="plusDivs(-1, true)">&#10094;</button>
 						<img src="media/anonymous.png" class="round">
 						<div>"Pisalca, pisalca!!"<span class="author">Tanja, Tatjana, karkol ze</span></div>
-					<button onclick="plusDivs(+1)">&#10095;</button>
+					<button onclick="plusDivs(+1, true)">&#10095;</button>
 				</div>
 
 				<script>
 					var slideIndex = Math.floor(Math.random() * 3) + 1;
 					showDivs(slideIndex);
+					var interval = setInterval(function() { plusDivs(+1, false) }, 5000);
 
-					function plusDivs(n) {
+					function plusDivs(n, manual) {
 						showDivs(slideIndex += n);
+						if (manual) clearInterval(interval);
 					}
 
 					function showDivs(n) {
