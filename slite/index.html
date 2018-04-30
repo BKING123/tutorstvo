@@ -93,20 +93,65 @@
 				<polygon points="100 0 100 10 0 10" />
 			</svg>
 
-			<section class="gray">
-				<!-- lorem ipsum -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae diam purus. Proin eu molestie tellus. Interdum et malesuada
-				fames ac ante ipsum primis in faucibus. Donec venenatis quis enim pharetra euismod. Sed accumsan mauris eros, sit amet dapibus lorem
-				tincidunt eget. Nullam a arcu pulvinar, egestas diam id, venenatis velit. Vestibulum faucibus vulputate urna, in venenatis mauris eleifend
-				vitae. Mauris id viverra lacus, ac posuere dui. Praesent nunc lectus, lobortis quis ultrices ac, consequat in risus. Nulla maximus arcu
-				ipsum, sed dignissim leo ultricies sed. Aenean volutpat purus in ligula interdum pretium. Nulla placerat orci dui, sit amet facilisis magna
-				efficitur et.</p>
-				<p>Maecenas accumsan nibh dui, ac vestibulum ligula convallis quis. Proin et consequat purus. Duis ac dui placerat, sodales orci
-				eget, vehicula enim. Nam porttitor, dui nec tempor mollis, est dui laoreet erat, quis pulvinar leo mi sed sem. Nunc dignissim nec
-				eros sit amet semper. In tincidunt maximus augue nec euismod. Donec vestibulum, tellus ac commodo tincidunt, nulla massa fringilla
-				urna, vel blandit velit sem vitae dolor. Morbi viverra at orci eu dictum. Fusce ante eros, faucibus non turpis ut, suscipit blandit
-				magna. Praesent rutrum facilisis feugiat. Cras sagittis aliquet elementum. Sed lacinia, felis in rhoncus varius, justo felis tincidunt
-				ex, sit amet maximus augue magna nec nulla. Nulla euismod erat at lacus scelerisque maximus.</p>
+			<section class="quoteShow">
+				<!-- Quotes -->
+				<div class="quote">
+					<button onclick="plusDivs(-1)">&#10094;</button>
+						<img src="media/shakespeare.jpg" class="round">
+						<div>"To be or not to be, that is the question:
+							Whether 'tis nobler in the mind to suffer
+							The slings and arrows of outrageous Fortune,
+							Or to take arms against a sea of troubles
+							And by opposing end them. To die, to sleep .-
+							No more. And by a sleep, to say we end
+							The heart-ache and the thousand natural shocks
+							That flesh is heir to; 'tis a consummation
+							Devoutly to be wished. To die, to sleep .-"<span class="author">Shakespeare</span></div>
+					<button onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+				<div class="quote">
+					<button onclick="plusDivs(-1)">&#10094;</button>
+						<img src="media/jatan.jpg" class="round">
+						<div>"Kaj je smisu tega da se ucim kemijo ce mi bo Cebinka itak dala 5??"<span class="author">Yon, 2.g</span></div>
+					<button onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+				<div class="quote">
+					<button onclick="plusDivs(-1)">&#10094;</button>
+						<img src="media/anonymous.png" class="round">
+						<div>"Tutorstvo mi je zelo pomagalo priti do moje zelo zeljene petice! Zdaj mi mami koncno spet da za jest. Hvala tutorckii!!!"<span class="author">Francka, 2.g</span></div>
+					<button onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+				</div>
+				<div class="quote">
+					<button onclick="plusDivs(-1)">&#10094;</button>
+						<img src="media/anonymous.png" class="round">
+						<div>"Pisalca, pisalca!!"<span class="author">Tanja, Tatjana, karkol ze</span></div>
+					<button onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+
+				<script>
+					var slideIndex = Math.floor(Math.random() * 3) + 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("quote");
+						if (n > x.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = x.length}
+						for (i = 0; i < x.length; i++) {
+							x[i].style.opacity = "0";
+							x[i].style.display = "none";
+					 		//x[i].style.visibility = "hidden";
+						}
+						x[slideIndex-1].style.display = "flex";
+						//x[slideIndex-1].style.visibility = "visible";
+						x[slideIndex-1].style.opacity = "1";
+					}
+				</script>
 			</section>
 
 			<svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">

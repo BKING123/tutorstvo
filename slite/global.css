@@ -1,5 +1,5 @@
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous|Dosis');
 /*
 ===============
 External fonts:
@@ -8,6 +8,7 @@ External fonts:
 	font-family: 'Megrim', Helvetica;
 	font-family: 'Righteous', Helvetica;
 	font-family: 'Trebuchet MS', Helvetica;
+	font-family: 'Indie flower', cursive;
 
 Neuporabljene fonte v produkciji odstranimo.
 
@@ -166,12 +167,57 @@ svg.bottom {
 
 
 
-.gray {
+.quoteShow {
 	background-color: gray;
 	color: white;
 	width: 100%;
 	padding: 2em;
 	box-sizing: border-box;
+}
+.quote {
+	font-family: 'Dosis', cursive;
+	font-weight: bold;
+	font-size: 2em;
+	color: rgba(255,255,255,0.7);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 0.5s;
+}
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.quote .author {
+	display: block;
+	text-align: right;
+}
+.quote .author:before {
+	content: "-";
+}
+.quote img.round {
+	border-radius: 100%;
+	height: 3em;
+	margin-right: 1em;
+}
+.quote button {
+	transition: background-color 0.1s ease-out;
+	height: 3em;
+	width: 2em;
+	vertical-align: center;
+	background-color: transparent;
+	color: white;
+	border: none;
+	border-radius: 10%;
+	margin: auto 2em;
+	font-size: 0.5em;
+}
+.quoteShow:hover button {
+	background-color: rgba(0,0,0,0.2);
+}
+.quoteShow:hover button:hover {
+	background-color: rgba(0,0,0,0.7);
 }
 
 
