@@ -1,16 +1,26 @@
 # Tutorstvo
-Uradna spletna stran Tutorstva GL
 
-Prototipi:
-- [gradient-blue](https://plojyon.github.io/tutorstvo/gradient-blue) Avtor: Domen
-- [pastel-glass](https://plojyon.github.io/tutorstvo/pastel-glass) Avtor: Yon
-- [fake-ledina](https://plojyon.github.io/tutorstvo/fake-ledina) Avtor: Yon
-- [colibri](https://plojyon.github.io/tutorstvo/colibri) Avtor: Yon
-- [slite](https://plojyon.github.io/tutorstvo/slite) Avtor: Yon
+[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/slite)
 
-[Template](https://plojyon.github.io/tutorstvo/template) (ne spreminjaj, zgolj za zgled)
+## Domena je bila odobrena!!
+**Vstopamo v prelaunch stage**
 
-*Novi prototipi zazeljeni.*
+Stran bo kmalu objavljena na naslovu https://tutorstvo.ledina.si
+
+Ker stran se ni popolnoma koncana, oddajamo Minimum Viable Product (MVP)! - cim prej, oddamo najmanj kar se da, ostalo bomo dodajal kasnej.
+
+Cim prej poskrbimo, da je stran pripravljena na odobritev; sledite Pre-launch checklisti za seznam stvari, ki jih je nujno treba uredit PREDEN objavimo!
+
+
+### Prelaunch checklist:
+ - ~~Osnovni dizajn brez "kreativnih" fontov~~
+ - ~~Odstranit (se) neuporabljene povezave~~
+ - ~~Popravit pokvarjene povezave (404 error)~~
+ - Napisat besedilo (ne Lorem Ipsum) - dela Veronika
+ - Ne pozabit dat not dejanskih citatov, in odstrant Shakespeara, Pisalca in 3.14
+ - Manjsi stilisticni popravki za dober prvi vtis med dijaki
+
+---
 
 Opomnik:
 --------
@@ -26,22 +36,14 @@ dodano ali odstranjeno.
 
 Tudi commiti, ki dodajo samo komentarje so dobrodosli.
 
-Nujni elementi strani:
-----------------------
-- Naslov "Tutorstvo GL", "Tutorstvo Ledina", "Tutorstvo Gimnazije Ledina" ali "Tutorstvo"
-- Navigacija z vsaj eno povezavo na prijavo (lahko tudi dve; eno kot tutor, eno kot dijak. ce bo samo ena, naj gre na razdelitveno stran) in povezavo na <www.ledina.si>
-- Predstavitven paragraph, kjer bo kratek opis tutorstva
-- Template za novice (kako zgleda novicka na strani?)
-
-**Protip**: slike *izjemno* popestrijo kakrsen koli dizajn; dizajn brez slik je zelo omejen in tezko doseze estetski nivo dizajna s slikami;
-priporocam preproste grafike, po moznosti vektorske (.svg), ali generic background image - pazi na avtorske pravice!
 
 Cilji:
 ------
-1. vpadljivost, estetika; privabljamo bodoce stranke!
-2. hitrost, odzivnost in preprostost.
-3. vzdrzljiva koda (to pomeni koda, ki jo je lahko vzdrzevati in prilagajati - komentarji in primerna dokumentacija sta kljucega pomena); stran lahko za nami ostane se vec let.
-4. odzivna stran, ki se prilagaja na vse velikosti ekranov
+1. Vpadljivost, estetika; privabljamo bodoce stranke!
+2. Hitrost, odzivnost in preprostost.
+3. Vzdrzljiva koda (to pomeni koda, ki jo je lahko vzdrzevati in prilagajati - komentarji in primerna dokumentacija sta kljucega pomena); stran lahko za nami ostane se vec let.
+4. Nisi edini, ki urejas stran - pusti tako kodo, ki jo lahko berejo tudi drugi!!
+5. Odzivna stran, ki se prilagaja na vse velikosti ekranov
 
 OP: Komentarjev ni nikoli prevec
 
