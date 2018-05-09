@@ -1,5 +1,5 @@
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous');
 /*
 ===============
 External fonts:
@@ -176,7 +176,7 @@ svg.bottom {
 	box-sizing: border-box;
 }
 .quote {
-	font-family: 'Dosis', cursive;
+	font-family: "Helvetica Neue", Helvetica;
 	font-weight: bold;
 	font-size: 2em;
 	color: #FCCA1C;/*rgba(0,0,0,0.5);*/
@@ -187,6 +187,7 @@ svg.bottom {
 	justify-content: center;
 	align-items: center;
 	animation: fadein 1.5s;
+	word-wrap: break-word;
 }
 @keyframes fadein {
     from {opacity: 0}
