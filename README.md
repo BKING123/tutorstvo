@@ -20,6 +20,7 @@ Cim prej poskrbimo, da je stran pripravljena na odobritev; sledite Pre-launch ch
  - Ne pozabit dat not dejanskih citatov, in odstrant Shakespeara, Pisalca in 3.14
  - Manjsi stilisticni popravki za dober prvi vtis med dijaki
 
+
 ---
 
 Opomnik:
@@ -69,3 +70,14 @@ OP: Komentarjev ni nikoli prevec
     - index.html // stran za prijavo tutorjev
     - style.css  // css za sosednji index.html
 ```
+
+---
+
+
+### TODO:
+ - form za prijavo tutorjev (pridruzi se)
+ - ureditev podstrani, mejna stran za prijavo (fork prijava- tutor/dijak)
+ - sestanek! dogovorimo se: kako potece registracija (samo anja ali dijaki sami preko spletne strani?); kaj hocemo od logina? (tutorske novicke, urejanje "profila" - predmeti in termini)
+ - login za tutorje, backend
+ - urejanje "profila" in kar se dogovorimo na sestanku
+ - dijakom prijazna podstran z navodili za urejanje spletne strani (kako dobiti github dostop in urejati datoteke, kako deluje backend, kje dobiti gesla, itd.)
