@@ -229,7 +229,30 @@ svg.bottom {
 #faq, #o_nas {
 	padding: 0 2em;
 }
-#end {
+summary {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+details p {
+	margin-left: 1.5em;
+	margin-top: 0;
+}
+summary:hover {
+	cursor: pointer;
+}
+summary:focus {
+	outline: none;
+}
+#footer {
+	background-color: LemonChiffon;
 	padding: 2em;
-	padding-top: 0;
+	padding-top: 1em;
+	margin-top: 4em;
+	border-top: dashed 3px gold;
+}
+#signature {
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-top: 3em;
 }

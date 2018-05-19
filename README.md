@@ -3,22 +3,21 @@
 [Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/slite)
 
 ## Domena je bila odobrena!!
-**Vstopamo v prelaunch stage**
+~~Vstopamo v prelaunch stage!!~~  
+**Vzlet cez 3... 2... 1....**
 
-Stran bo kmalu objavljena na naslovu https://tutorstvo.ledina.si
+Stran ob prvi priloznosti objavimo na naslovu https://tutorstvo.ledina.si
 
 Ker stran se ni popolnoma koncana, oddajamo Minimum Viable Product (MVP)! - cim prej, oddamo najmanj kar se da, ostalo bomo dodajal kasnej.
-
-Cim prej poskrbimo, da je stran pripravljena na odobritev; sledite Pre-launch checklisti za seznam stvari, ki jih je nujno treba uredit PREDEN objavimo!
 
 
 ### Prelaunch checklist:
  - ~~Osnovni dizajn brez "kreativnih" fontov~~
  - ~~Odstranit (se) neuporabljene povezave~~
  - ~~Popravit pokvarjene povezave (404 error)~~
- - Napisat besedilo (ne Lorem Ipsum) - dela Veronika
- - Ne pozabit dat not dejanskih citatov, in odstrant Shakespeara, Pisalca in 3.14
- - Manjsi stilisticni popravki za dober prvi vtis med dijaki
+ - ~~Napisat besedilo (ne Lorem Ipsum) - dela Veronika~~
+ - ~~Ne pozabit dat not dejanskih citatov, in odstrant Shakespeara, Pisalca in 3.14~~
+ - ~~Manjsi stilisticni popravki za dober prvi vtis med dijaki~~
 
 
 ---
