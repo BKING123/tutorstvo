@@ -1,6 +1,6 @@
 # Tutorstvo
 
-[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/slite)
+[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/)
 
 ## Domena je bila odobrena!!
 ~~Vstopamo v prelaunch stage!!~~  
