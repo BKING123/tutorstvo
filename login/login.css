@@ -2,32 +2,53 @@
 Barve
 	ozadje: lightBlue
 	okvirček: lightYellow
-	
-*/
 
+*/
+html {
+	height: 100%;
+}
 body {
 	background: lightBlue;
+	height: 100%;
 }
-
-#prvi {
+#box {
 	background: lightYellow;
+
 	margin-left: auto;
 	margin-right: auto;
-	width: 200px;
+	width: 40%;
+	max-width: 700px;
+	min-width: 300px;
+	padding: 60px;
+
+	display: flex;
 	flex-direction: column;
-	padding-top: 20px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 20px;
-	margin-top: 25%;
-	margin-bottom: 25%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-h2 {
+h1 {
 	font-family: Trebuchet MS, Sans-serif;
 	text-align: center;
+	font-size: 1.5em;
 }
-/*
-input:active {
-	border-color: blue;
-}*/
+input {
+	margin: 1em 0;
+	font-size: 1em;
+	outline: none; !important /* !important pomeni da to velja ne glede na stanje (:hover :active :focus ...)*/
+	transition: border-color 20s ease;
+	padding: 0.2em 0.5em;
+
+	border: 1px solid lightgray;
+	border-radius: 2px;
+
+}
+input:hover {
+	border-color: darkgray;
+}
+input:focus {
+	border-color: gray;
+}
