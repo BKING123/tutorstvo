@@ -1,24 +1,13 @@
 # Tutorstvo
 
-[Uradna spletna stran Tutorstva GL](https://plojyon.github.io/tutorstvo/)
+Uradna spletna stran Tutorstva GL [(predogled github kode)](https://plojyon.github.io/tutorstvo/)
 
 ## Domena je bila odobrena!!
 ~~Vstopamo v prelaunch stage!!~~  
-**Vzlet cez 3... 2... 1....**
+~~Vzlet cez 3... 2... 1....~~  
+Stran je JAVNA! Oglejte si jo na [tutorstvo.ledina.si](https://tutorstvo.ledina.si)
 
-Stran ob prvi priloznosti objavimo na naslovu https://tutorstvo.ledina.si
-
-Ker stran se ni popolnoma koncana, oddajamo Minimum Viable Product (MVP)! - cim prej, oddamo najmanj kar se da, ostalo bomo dodajal kasnej.
-
-
-### Prelaunch checklist:
- - ~~Osnovni dizajn brez "kreativnih" fontov~~
- - ~~Odstranit (se) neuporabljene povezave~~
- - ~~Popravit pokvarjene povezave (404 error)~~
- - ~~Napisat besedilo (ne Lorem Ipsum) - dela Veronika~~
- - ~~Ne pozabit dat not dejanskih citatov, in odstrant Shakespeara, Pisalca in 3.14~~
- - ~~Manjsi stilisticni popravki za dober prvi vtis med dijaki~~
-
+Pocitnice izkoristimo produktivno, naslednje na seznamu je **login** support! 
 
 ---
 
