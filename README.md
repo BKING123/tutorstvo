@@ -1,13 +1,8 @@
 # Tutorstvo
 
-Uradna spletna stran Tutorstva GL [(predogled github kode)](https://plojyon.github.io/tutorstvo/)
+Uradna spletna stran Tutorstva GL [(predogled github kode)](https://plojyon.github.io/tutorstvo/)  
+Objavljeno na [tutorstvo.ledina.si](https://tutorstvo.ledina.si)
 
-## Domena je bila odobrena!!
-~~Vstopamo v prelaunch stage!!~~  
-~~Vzlet cez 3... 2... 1....~~  
-Stran je JAVNA! Oglejte si jo na [tutorstvo.ledina.si](https://tutorstvo.ledina.si)
-
-Pocitnice izkoristimo produktivno, naslednje na seznamu je **login** support! 
 
 ---
 
@@ -65,7 +60,5 @@ OP: Komentarjev ni nikoli prevec
 ### TODO:
  - form za prijavo tutorjev (pridruzi se)
  - ureditev podstrani, mejna stran za prijavo (fork prijava- tutor/dijak)
- - sestanek! dogovorimo se: kako potece registracija (samo anja ali dijaki sami preko spletne strani?); kaj hocemo od logina? (tutorske novicke, urejanje "profila" - predmeti in termini)
- - login za tutorje, backend
- - urejanje "profila" in kar se dogovorimo na sestanku
+ - login za tutorje, backend; tutorske novicke, urejanje "profila" - predmeti in termini
  - dijakom prijazna podstran z navodili za urejanje spletne strani (kako dobiti github dostop in urejati datoteke, kako deluje backend, kje dobiti gesla, itd.)
