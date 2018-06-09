@@ -10,6 +10,7 @@ html {
 body {
 	background: lightBlue;
 	height: 100%;
+	font-family: sans-serif;
 }
 #box {
 	background: lightYellow;
@@ -40,19 +41,45 @@ h1 {
 	border-style: dashed none;
 }
 input {
-	margin: 1em 0;
+	margin-top: 2em;
 	font-size: 1em;
 	outline: none; !important /* !important pomeni da to velja ne glede na stanje (:hover :active :focus ...)*/
-	transition: border-color 20s ease;
+
+	border: none;
+	border-style: none none dotted none;
+	border-color: gray;
+	border-width: 3px;
+	transition: border 0.3s ease;
+
+	background-color: transparent;
+
 	padding: 0.2em 0.5em;
-
-	border: 1px solid lightgray;
-	border-radius: 2px;
-
 }
 input:hover {
-	border-color: darkgray;
+	border-color: black;
 }
 input:focus {
-	border-color: gray;
+	border-color: darkcyan;
+}
+
+label {
+	margin-left: 0.2em;
+	color: gray;
+	position: relative;
+	top: -1.6em;
+	transition: top 0.5s;
+	cursor: text;
+}
+
+#username:focus ~ #userLabel, #username:not(:placeholder-shown) ~ #userLabel {
+	top: -3.5em;
+}
+#username:focus ~ #userLabel {
+	color: darkcyan;
+}
+#password:focus ~ #passLabel, #password:not(:placeholder-shown) ~ #passLabel {
+	top: -3.5em;
+}
+#password:focus ~ #passLabel {
+	color: darkcyan;
 }
