@@ -1,14 +1,11 @@
-/*
-Barve
-	ozadje: lightBlue
-	okvirček: lightYellow
 
-*/
+
+
 html {
 	height: 100%;
 }
 body {
-	background: lightBlue;
+	background: aliceblue;
 	height: 100%;
 	font-family: sans-serif;
 }
@@ -17,33 +14,42 @@ body {
 
 	margin-left: auto;
 	margin-right: auto;
-	width: 40%;
-	max-width: 700px;
-	min-width: 300px;
-	padding: 60px;
-
-	display: flex;
-	flex-direction: column;
+	width: 350px;
 
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	box-shadow: 0 0 5px black;
+}
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+#title {
+	background-color: #4285f4;
+	padding: 0.7em 2em;
+}
+#data {
+	padding: 2em 4em;
 }
 
 h1 {
 	font-family: Trebuchet MS, Sans-serif;
 	text-align: center;
 	font-size: 1.7em;
-	margin-bottom: 1.5em;
 	padding: 1em 0;
-	border: 2px dotted black;
+	border: 2px dotted white;
 	border-style: dashed none;
+	color: white;
+	text-shadow: 1px 1px black;
 }
 input {
 	margin-top: 2em;
 	font-size: 1em;
-	outline: none; !important /* !important pomeni da to velja ne glede na stanje (:hover :active :focus ...)*/
+	outline: none; !important /* !important pomeni da to velja ne glede na stanje (:hover :active :focus ...) */
 
 	border: none;
 	border-style: none none dotted none;
@@ -82,4 +88,25 @@ label {
 }
 #password:focus ~ #passLabel {
 	color: darkcyan;
+}
+
+
+button {
+	transition: background-color 0.1s;
+	background-color: #4285f4;
+	border: none;
+	margin-top: 16px;
+	height: 50px;
+	font-size: 1.3em;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 0 0 3px black;
+	border-radius: 3px;
+	outline: none; !important
+}
+button:active {
+	box-shadow: 0 0 10px black;
+	background-color: #2a56c6;
+	padding: 0;
 }
