@@ -1,5 +1,5 @@
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous|Open+Sans:800');
 /*
 ===============
 External fonts:
@@ -9,12 +9,6 @@ External fonts:
 	font-family: 'Righteous', Helvetica;
 	font-family: 'Trebuchet MS', Helvetica;
 	font-family: 'Indie flower', cursive;
-
-Neuporabljene fonte v produkciji odstranimo.
-
-=============
-Barvna shema:
-	tukaj dodaj *vse* barve, ki jih uporabis na spletni strani
 
 */
 
@@ -89,15 +83,30 @@ nav ul {
 }
 #signup {
 	background-color: #FB5B6C;
-	border-radius: 1em;
+	border-radius: 1.3em;
 	color: white;
-	padding: 0.5em 1em;
+	padding: 0.7em 1.5em;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	box-shadow: 2px 2px gray;
+	position: relative;
+	top: -2px;
+	left: -2px;
 }
 #signup:hover {
-	text-decoration: none;
 	filter: brightness(90%);
+	box-shadow: 3px 3px gray;
+	top: -3px;
+	left: -3px;
 }
-
+#signup:active {
+	filter: brightness(90%);
+	box-shadow: none;
+	top: 0px;
+	left: 0px;
+}
 
 
 
