@@ -22,7 +22,7 @@ a:hover {
 	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: Trebuchet MS, Sans-serif;
+	font-family: 'Trebuchet MS', Sans-serif;
 }
 
 
@@ -34,7 +34,7 @@ header {
 	flex: 1;
 }
 nav {
-	font-family: 'Open Sans', Trebuchet MS, Helvetica, Sans-serif;
+	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, Sans-serif;
 	display: flex;
 	flex-direction: column;
 }
@@ -72,7 +72,7 @@ nav a:hover {
 }
 #description {
 	color: rgba(0,0,0,0.6);
-	font-family: Trebuchet MS, Sans-serif;
+	font-family: 'Trebuchet MS', Sans-serif;
 
 	margin-bottom: 2em;
 }
