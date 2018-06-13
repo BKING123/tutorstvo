@@ -1,12 +1,10 @@
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Megrim|Righteous|Open+Sans:800');
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue|Open+Sans:800');
 /*
 ===============
 External fonts:
 
 	font-family: 'Helvetica Neue', Helvetica;
-	font-family: 'Megrim', Helvetica;
-	font-family: 'Righteous', Helvetica;
 	font-family: 'Trebuchet MS', Helvetica;
 	font-family: 'Indie flower', cursive;
 
@@ -15,7 +13,7 @@ External fonts:
 body {
 	margin: 0;
 	background-color: white;
-	font-family: "Helvetica Neue", Helvetica, Sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Sans-serif;
 }
 a {
 	text-decoration: none;
@@ -34,7 +32,7 @@ header {
 }
 nav {
 	text-align: right;
-	font-family: 'Righteous', Trebuchet MS, Helvetica, Sans-serif;
+	font-family: 'Open Sans', Trebuchet MS, Helvetica, Sans-serif;
 
 	flex: 1;
 	display: flex;
@@ -45,8 +43,9 @@ nav a {
 	margin: 0.5em;
 }
 nav a:hover {
-	color: rgba(0,0,0,0.8);
+	color: black;
 	text-decoration: none;
+	border-bottom: 1px dashed black;
 }
 
 .spacer {
@@ -62,7 +61,8 @@ nav ul {
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: right;
+	/* justify-content: right; odstranjeno, ker ponekod ne deluje */
+	/* TODO: nov nacin poravnave na desno */
 }
 
 
@@ -86,7 +86,8 @@ nav ul {
 	border-radius: 1.3em;
 	color: white;
 	padding: 0.7em 1.5em;
-	font-family: "Open Sans", sans-serif;
+
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 
@@ -185,7 +186,7 @@ svg.bottom {
 	box-sizing: border-box;
 }
 .quote {
-	font-family: "Helvetica Neue", Helvetica;
+	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: bold;
 	font-size: 2em;
 	color: #FCCA1C;/*rgba(0,0,0,0.5);*/
@@ -207,7 +208,7 @@ svg.bottom {
 	text-align: right;
 }
 .quote .author:before {
-	content: "-";
+	content: '-';
 }
 .quote img.round {
 	border-radius: 100%;
