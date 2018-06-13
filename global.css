@@ -30,13 +30,25 @@ h1, h2, h3, h4, h5, h6 {
 header {
 	display: flex;
 }
-nav {
-	text-align: right;
-	font-family: 'Open Sans', Trebuchet MS, Helvetica, Sans-serif;
-
+.spacer {
 	flex: 1;
+}
+nav {
+	font-family: 'Open Sans', Trebuchet MS, Helvetica, Sans-serif;
 	display: flex;
 	flex-direction: column;
+}
+nav ul {
+	padding: 0;
+	margin: 1em;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+}
+nav ul li {
+	display: inline;
+	margin: 0.5em;
 }
 nav a {
 	color: rgba(0,0,0,0.6);
@@ -46,23 +58,6 @@ nav a:hover {
 	color: black;
 	text-decoration: none;
 	border-bottom: 1px dashed black;
-}
-
-.spacer {
-	flex: 1;
-}
-nav ul li {
-	display: inline;
-	margin: 0.5em;
-}
-nav ul {
-	padding: 0;
-	margin: 1em;
-
-	display: flex;
-	flex-wrap: wrap;
-	/* justify-content: right; odstranjeno, ker ponekod ne deluje */
-	/* TODO: nov nacin poravnave na desno */
 }
 
 
@@ -116,7 +111,6 @@ main {
 }
 
 
-
 .stats {
 	display: flex;
 	flex-direction: row;
@@ -141,6 +135,7 @@ table.features i {
 	margin-right: 16px;
 }
 
+
 aside h3 {
 	margin: 0;
 }
@@ -158,7 +153,6 @@ aside .floaty {
         flex-direction: column;
     }
 }
-
 
 svg {
 	display: block;
