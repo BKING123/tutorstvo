@@ -10,13 +10,12 @@
 		<link rel="stylesheet" type="text/css" href="global.css"/>
 
 
-<!-- FONTE IMPORTAMO V CSS!! -->
 
 		<!-- font z ikonami -->
-		<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
 		<!-- google fonti -->
-		<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue%7COpen+Sans:800" crossorigin="anonymous">-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue%7COpen+Sans:800" crossorigin="anonymous">
 
 
 		<!--
@@ -39,6 +38,14 @@
 			console.log("	-Ekipa tutorjev Ledine");
 			console.log("----------------------------------------------------------------------------------------------------------------------------");
 		</script>
+		<script>
+			function js_Load() {
+				// zakaj to delam? poglej link
+				// https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+				document.body.style.visibility='visible';
+			}
+		</script>
+		<noscript><style>body { visibility: visible; }</style></noscript>
 	</head>
 	<!--
 	Hey!
@@ -54,7 +61,7 @@
 	Pricakujemo te!
 		-Ekipa tutorjev Ledine
 	-->
-	<body>
+	<body style="visibility: hidden;" onload="js_Load()"> <!-- glej js_Load() za informacije zakaj je visibility:hidden -->
 		<header>
 			<a href="http://www.ledina.si"><img id="logo" src="media/ledina.png" alt="GL" height="150"></a>
 			<div class="spacer"></div>
@@ -78,7 +85,7 @@
 			<a id="signup" href="prijava/dijak/index.html">pOiščI TUtoRjA</a>
 		</section>
 		<main>
-			<section class="stats">
+			<section id="stats">
 				<article id="statistika">
 					<h3 class="article title">Prednosti tutorstva</h3>
 					<table class="features">
@@ -111,7 +118,6 @@
 							<li>na voljo tutorji za vse predmete na Gimnaziji Ledina, pa tudi za tiste, ki jih ni</li>
 
 						</ul>
-						<!--<h4>Tezave tutorstva</h4>--> <!-- zakometirano zato ker se beseda tezave slabo slisi, je kokr da mamo tezave pr tutorjih -->
 						<p>Po naši <!--<a href="TODO: link do rezultatov ankete">-->tutorski raziskavi<!--</a>--> smo ugotovili, da marsikdo (> 90%) misli, da je v preteklosti že potreboval tutorja,
 						a za tutorstvo še ni vedel. Tako so bili prisiljeni poiskati pomoč pri inštrukcijah (al pa popravcih, nimaš kej), česar pa tebi ni treba.</p>
 					</section>
