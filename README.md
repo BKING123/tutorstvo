@@ -44,49 +44,49 @@ OP: Komentarjev ni nikoli prevec
 
 ## Nova file schema:
 ```
-- index.html         // glavna stran
-- index.css         // css za glavno stran
+- index.html          // glavna stran
+- index.css           // css za glavno stran
 + media
-  - [media]          // slike, videi, glasba in druga multimedia
-- kdo_smo.html       // stran s podatki o nas
-- kdo_smo.css        // stil za kdo_smo.html
-- poisci_tutorja.html     // stran za prijavo kot dijak (ne potrebuje css)
+  - [media]           // slike, videi, glasba in druga multimedia
+- kdo_smo.html        // stran s podatki o nas
+- kdo_smo.css         // stil za kdo_smo.html
+- poisci_tutorja.html // stran za prijavo kot dijak (ne potrebuje css)
 + eTutor
-	- index.html     // glavna stran portala eTutor
-	- index.css	     // stil za portal eTutor
-	- register.html // stran za registracijo tutorja
-	- register.css  // stil za registracijsko stran
-	- login.html     // login v portal eTutor
-	- login.css      // stil za login.html
+  - index.html        // glavna stran portala eTutor
+  - index.css	      // stil za portal eTutor
+  - register.html     // stran za registracijo tutorja
+  - register.css      // stil za registracijsko stran
+  - login.html        // login v portal eTutor
+  - login.css         // stil za login.html
 ```
 
 ## Stara file schema:
 ```
-- index.html         // glavna stran
-- global.css         // css za glavno stran
+- index.html     // glavna stran
+- global.css     // css za glavno stran
 + media
-  - [media]          // slike, videi, glasba in druga multimedia
+  - [media]      // slike, videi, glasba in druga multimedia
 + kdo_smo
-  - index.html       // stran s podatki o nas
-  - style.css        // stil za sosenji index.html
+  - index.html   // stran s podatki o nas
+  - style.css    // stil za sosenji index.html
 + prijava
-  - index.html       // stran, kjer te vprasa ali bi se prijavil kot dijak ali tutor
-  - style.css        // css za sosednji index.html
+  - index.html   // stran, kjer te vprasa ali bi se prijavil kot dijak ali tutor
+  - style.css    // css za sosednji index.html
   + dijak
-    - index.html     // stran za prijavo dijakov
-    - style.css      // css za sosednji index.html
+    - index.html // stran za prijavo dijakov
+    - style.css  // css za sosednji index.html
   + tutor
-    - index.html     // stran za prijavo tutorjev (eTutor/registracija?)
-    - style.css      // css za sosednji index.html
+    - index.html // stran za prijavo tutorjev (eTutor/registracija?)
+    - style.css  // css za sosednji index.html
 + login
-	- index.html     // login v portal eTutor
-	- style.css      // stil za sosednji html
+  - index.html   // login v portal eTutor
+  - style.css    // stil za sosednji html
 + eTutor
-	- index.html     // glavna stran portala eTutor
-	- style.css	     // stil za portal eTutor
-	+ registracija
-		- index.html // stran za registracijo tutorja
-		- style.css  // stil za registracijsko stran
+  - index.html   // glavna stran portala eTutor
+  - style.css	 // stil za portal eTutor
+  + registracija
+    - index.html // stran za registracijo tutorja
+    - style.css  // stil za registracijsko stran
 ```
 ---
 
