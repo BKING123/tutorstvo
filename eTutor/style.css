@@ -1,0 +1,51 @@
+/***********/
+/* CONTENT */
+/***********/
+#content {
+	background-color: lightyellow;
+	width: 80%;
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+article {
+	padding: 2em;
+	overflow: auto;
+}
+
+#introduction {
+	display: flex;
+	position: relative;
+}
+
+
+
+/******************************/
+/* FACE IMAGE */
+#face {
+	flex: 1;
+	width: 100%;
+}
+
+#image {
+	width: 30%;
+}
+/* PERONAL INFORMATION TABLE */
+#data {
+	flex: 1;
+	padding: 1em 1em 1em 2em;
+}
+
+/* EDIT */
+
+#edit {
+	flex: 1;
+	padding: 1em 1em 1em 2em;
+	border-left: dashed lightBlue;
+}
+
+/********************************************************************************************************/
+body {
+	margin: 20px 0 0 0;
+	background: linear-gradient(to right, lightBlue, aliceBlue 14%, aliceBlue 86%, lightBlue 100%);
+}
