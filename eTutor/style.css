@@ -1,21 +1,13 @@
-/***********/
-/* CONTENT */
-/***********/
-#content {
+/***************/
+/* PROFILE BOX */
+/***************/
+#profile {
 	background-color: lightyellow;
 	width: 80%;
 	max-width: 50em;
 	margin: 0 auto;
-}
-
-article {
-	padding: 2em;
-	overflow: auto;
-}
-
-#introduction {
 	display: flex;
-	position: relative;
+	padding: 2em;
 }
 
 
@@ -39,7 +31,6 @@ article {
 /* EDIT */
 
 #edit {
-	flex: 1;
 	padding: 1em 1em 1em 2em;
 	border-left: dashed lightBlue;
 }
