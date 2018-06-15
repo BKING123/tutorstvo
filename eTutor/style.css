@@ -30,8 +30,7 @@
 	padding: 1em 1em 1em 2em;
 }
 
-/* EDIT */
-
+/* "EDIT" SECTION */
 #edit {
 	padding: 1em 1em 1em 2em;
 	border-left: dashed lightBlue;
@@ -51,6 +50,9 @@ h2 {
 	font-size: 2em;
 }
 
+
+
+
 #novice {
 	width: 80%;
 	max-width: 50em;
@@ -58,44 +60,37 @@ h2 {
 	padding: 2em;
 }
 
-.novica {
+
+article h3 {
 	font-size: 1.6em;
 	font-family: 'Trebuchet MS', Sans-serif;
-	border-left: solid 3px Yellow;
+	border-left: solid 3px black;
 	padding-left: 1em;
 }
 
-.novica1 {
+article p {
+	display: flex;
+	padding: 2em;
+	border-left: solid 3px black;
+}
+
+.novica h3, .novica p {
+	border-color: yellow;
+}
+.novica p {
 	background: linear-gradient(to right, lightYellow, aliceBlue);
-	display: flex;
-	padding: 2em;
-	border-left: solid 3px yellow;
 }
 
-.oglas {
-	font-size: 1.6em;
-	font-family: 'Trebuchet MS', Sans-serif;
-	border-left: solid 3px Blue;
-	padding-left: 1em;
+.oglas h3, .oglas p {
+	border-color: blue;
 }
-
-.oglas1 {
+.oglas p {
 	background: linear-gradient(to right, lightBlue, aliceBlue);
-	display: flex;
-	padding: 2em;
-	border-left: solid 3px Blue;
 }
 
-.nujno {
-	font-size: 1.6em;
-	font-family: 'Trebuchet MS', Sans-serif;
-	border-left: solid 3px Red;
-	padding-left: 1em;
+.nujno h3, .nujno p {
+	border-color: red;
 }
-
-.nujno1 {
+.nujno p {
 	background: linear-gradient(to right, #FB5B6C, aliceBlue);
-	display: flex;
-	padding: 2em;
-	border-left: solid 3px Red;
 }
