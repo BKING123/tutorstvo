@@ -34,6 +34,11 @@
 #edit {
 	padding: 1em 1em 1em 2em;
 	border-left: dashed lightBlue;
+	display: flex;
+	flex-direction: column; /* elementi se vrstijo navzdol */
+}
+#edit i {
+	flex: 1;
 }
 
 /********************************************************************************************************/
@@ -93,4 +98,61 @@ article p {
 }
 .nujno p {
 	background: linear-gradient(to right, #FB5B6C, aliceBlue);
+}
+
+
+
+
+
+.mobile {
+	display: hidden; /* skrij vse elemente, ekskluzivne mobilni strani*/
+}
+
+/* PRAVILA ZA OZKE EKRANE */
+@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px, naj veljajo naslednja pravila: */
+	.desktop {
+		display: none; /* skrij vse elemente, ki so samo na desktop strani */
+	}
+	.mobile {
+		display: initial; /* pokazi elemente, ki so samo za mobilno stran */
+	}
+
+	body {
+		background: aliceBlue;
+		margin: 0;
+		padding: 2em;
+	}
+
+	/* ponastavi vse vrednosti */
+	#profile, #novice {
+		width: initial;
+		max-width: initial;
+		margin: initial;
+	}
+
+
+	#profile {
+		flex-direction: column; /* elementi se vrstijo navzdol */
+	}
+	#profile div { /* vsi <div> elementi znotraj #profile */
+		margin: 0 auto; /* poravnaj na sredino */
+	}
+	#face {
+		border-radius: 100%; /* slika je okrogla */
+	}
+	#edit {
+		flex-direction: row;
+		flex-wrap: wrap; /* ce zmanjka prostora lahko gres v novo vrstico */
+		border-left: none; /* odstranimo levi border */
+		border-top: dashed lightBlue; /* isti border naj bo na vrhu */
+	}
+	#edit i {
+		margin: 0.5em 1em;
+		display: inline-block;
+	}
+
+	#novice {
+		padding: 0;
+	}
+
 }
