@@ -105,7 +105,7 @@ article p {
 
 
 .mobile {
-	display: hidden; /* skrij vse elemente, ekskluzivne mobilni strani*/
+	display: none; /* skrij vse elemente, ekskluzivne mobilni strani*/
 }
 
 /* PRAVILA ZA OZKE EKRANE */
