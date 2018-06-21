@@ -64,24 +64,24 @@
 	-->
 	<body style="visibility: hidden;" onload="js_Load()"> <!-- glej js_Load() za informacije zakaj je visibility:hidden -->
 		<header>
-			<a href="http://www.ledina.si"><img id="logo" src="media/ledina.png" alt="GL" height="150"></a>
+			<a href="http://www.ledina.si"><img id="logo" class="desktop" src="media/ledina.png" alt="GL" height="150"></a>
 			<div class="spacer"></div>
 			<nav>
 				<div class="spacer"></div>
 				<ul>
-					<li><a class="selected" href="index.html"><i class="fa fa-home"></i>&nbsp;Domov</a></li>
-					<!--<li><a href="https://www.ledina.si/" target="_blank"><i class="fas fa-th"></i>&nbsp;GLedina</a></li>-->
-					<!--<li><a href="#novice"><i class="far fa-newspaper"></i>&nbsp;Novice</a></li>-->
-					<li><a href="#faq"><i class="fas fa-users"></i>&nbsp;Kdo&nbsp;smo</a></li>
-					<li><a href="prijava/dijak/index.html"><i class="fas fa-search"></i>&nbsp;Poišči&nbsp;tutorja</a></li>
-					<!--<li><a href="prijava/tutor/index.html"><i class="fas fa-user-plus"></i>&nbsp;Postani&nbsp;tutor</a></li>-->
-					<li><a href="login/index.html"><i class="fas fa-sign-in-alt"></i>&nbsp;Prijava&nbsp;v&nbsp;eTutor</a></li>
+					<li><a class="selected" href="index.html"><i class="fa fa-home"></i>Domov</a></li>
+					<!--<li><a href="https://www.ledina.si/" target="_blank"><i class="fas fa-th"></i>GLedina</a></li>-->
+					<!--<li><a href="#novice"><i class="far fa-newspaper"></i>Novice</a></li>-->
+					<li><a href="#faq"><i class="fas fa-users"></i>Kdo&nbsp;smo</a></li>
+					<li class="desktop"><a href="prijava/dijak/index.html"><i class="fas fa-search"></i>Poišči&nbsp;tutorja</a></li>
+					<!--<li><a href="prijava/tutor/index.html"><i class="fas fa-user-plus"></i>Postani&nbsp;tutor</a></li>-->
+					<li><a href="login/index.html"><i class="fas fa-sign-in-alt"></i>Prijava&nbsp;v&nbsp;eTutor</a></li>
 				</ul>
 				<div class="spacer"></div>
 			</nav>
 		</header>
 		<section id="quick">
-			<h1 id="title"><i class="fas fa-graduation-cap"></i>&nbsp;Tutorstvo&nbsp;GL</h1>
+			<h1 id="title"><i class="fas fa-graduation-cap"></i>Tutorstvo&nbsp;GL</h1>
 			<p id="description">Prva pomoč proti slabim ocenam!<br>Zastonj inštrukcije od sodijakov, sovrstnikov, ki najbolje poznajo prav tvoje profesorje.<br>Izboljšave vidne že po enem samem srečanju!</p>
 			<a id="signup" href="prijava/dijak/index.html">pOiščI TUtoRjA</a>
 		</section>
@@ -266,6 +266,7 @@
 				<section id="signature">
 					<p>Stran so postavili <a href="login/index.html">tutorji</a> Gimnazije Ledina.</p>
 					<!-- TODO: tuki damo link, ki te vrze na github oz. na neko stran z navodili kako pomagat delat stran -->
+					<p><a class="mobile" href="#">Nazaj gor</a></p>
 				</section>
 			</section>
 			<!--<section id="end">

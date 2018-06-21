@@ -94,6 +94,9 @@ nav ul li {
 	display: inline; /* po defaultu so vsak v svoji vrstici, mi hocemo da so vsi v eni */
 	margin: 0.5em; /* malo prostora v vse smeri */
 }
+nav i {
+	margin-right: 0.5em;
+}
 nav a {
 	color: rgba(0,0,0,0.6); /* barva texta v navigaciji (nekoliko transparentno crna - zgleda sivo ker je na belem ozadju) */
 	margin: 0.5em;
@@ -114,6 +117,9 @@ nav a:hover {
 #title { /* glavni naslov (Tutorstvo GL) */
 	font-size: 3em; /* veeeelik font */
 }
+#title i { /* ikona v naslovu */
+	margin-right: 0.5em; /* .5em presledka med ikono in textom */
+}
 #description { /* kratek opis tutorstva, kuj pod naslovom */
 	color: rgba(0,0,0,0.6); /* ista barva kot v navigaciji - nekoliko transparentno crna, ki zgleda sivo zaradi belega ozadja */
 	font-family: 'Trebuchet MS', Sans-serif; /* Trebuchet font */
@@ -132,20 +138,20 @@ nav a:hover {
 
 	box-shadow: 2px 2px gray; /* 3D efekt, zato da element izgleda bolj kot dejanski gumb */
 	position: relative; /* premaknemo ga 2px gor-desno, zato ker je senca 2px dol-levo, pristane na prvotni poziciji */
-	top: -2px;
-	left: -2px;
+	top: 0px;
+	left: 0px;
 }
 #signup:hover { /* miska na gumbu */
 	filter: brightness(90%); /* malo potemnimo barvo */
 	box-shadow: 3px 3px gray; /* senca se poveca */
-	top: -3px; /* element pa moramo premakniti bolj gor-desno, da senca ostane na prvotnem mestu (dvigne se gumb, ne spusca se senca) */
-	left: -3px;
+	top: -1px; /* element pa moramo premakniti bolj gor-desno, da senca ostane na prvotnem mestu (dvigne se gumb, ne spusca se senca) */
+	left: -1px;
 }
 #signup:active { /* gumb pritisnjen */
 	filter: brightness(90%); /* potemnitev */
 	box-shadow: none; /* brez sence */
-	top: 0px; /* gumb pa je tam, kjer je bila senca - zgleda popolnoma pritisnjen dol */
-	left: 0px;
+	top: 2px; /* gumb pa je tam, kjer je bila senca - zgleda popolnoma pritisnjen dol */
+	left: 2px;
 }
 
 
@@ -311,4 +317,76 @@ summary:focus {
 	font-size: 0.9em;
 	font-weight: bold;
 	margin-top: 3em;
+}
+
+
+
+.mobile {
+	display: none;
+}
+
+/* OZKI EKRANI */
+@media screen and (max-width: 550px), screen and (max-height: 500px) {
+	i.fa, i.fas, table.features i, #title i {
+		margin: 0;
+		display: block;
+	}
+	article {
+		margin: 0;
+	}
+
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: initial;
+	}
+
+	#quick {
+		margin: auto;
+	}
+	#quick p, #quick a {
+		margin: 2em;
+	}
+	header .spacer {
+		flex: 0;
+	}
+	nav {
+		flex: 1;
+		position: sticky;
+	}
+	nav ul {
+		margin: 0;
+		text-align: center;
+	}
+	nav ul li {
+		margin: 0;
+		padding: 0.5em;
+		background-color: black;
+		flex: 1;
+	}
+	nav a {
+		margin: 0;
+		color: white;
+	}
+	nav a:hover {
+		color: darkgray;
+	}
+
+	#signup {
+		display: block;
+		line-height: 2em;
+	}
+
+    tr td {
+        display: block;
+		text-align: center;
+    }
+	tr td:first-child {
+		margin-top: 1em;
+	}
+
+	h3 {
+		text-align: center;
+	}
 }
