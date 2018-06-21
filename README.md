@@ -20,7 +20,7 @@ ki lahko datoteke uredi v nov red, hkrati pa posodobi povezave v kodi.
 Opomnik:
 --------
 **Vsi udelezenci projekta si prizadevamo za strpnost do ostalih,
-cetudi se nivoji nasih znanj razlikujejo.**\
+cetudi se nivoji nasih znanj razlikujejo.**  
 Smo tutorji, predstavljamo skupnost oz. organizacijo, ki se *specializira*
 prav v poucevanju sovrstnikov.
 
