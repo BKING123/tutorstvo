@@ -3,6 +3,10 @@
 Uradna spletna stran Tutorstva GL [(predogled github kode)](https://plojyon.github.io/tutorstvo/)  
 Objavljeno na [tutorstvo.ledina.si](https://tutorstvo.ledina.si)
 
+*Uporabne povezave:*
++ [Mobile-friendly test](https://search.google.com/test/mobile-friendly)
++ [HTML validator](https://validator.w3.org/)
++ [Page speed test](https://developers.google.com/speed/pagespeed/insights/)
 
 ### **POZOR!!**
 Prislo je do kopicenja nepotrebnih datotek in map, zato uvajamo novo file shemo.  
@@ -92,7 +96,7 @@ OP: Komentarjev ni nikoli prevec
 
 
 ### TODO:
- - form za registracijo tutorjev (pridruzi se)
+ - ikona za eTutor (favicon + page logo)
  - portal eTutor:
 	1. Glavna stran z novicami in profilom
 	2. PHP backend za prijavo, registracijo in sledenje podatkom
