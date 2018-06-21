@@ -39,14 +39,6 @@
 			console.log("	-Ekipa tutorjev Ledine");
 			console.log("----------------------------------------------------------------------------------------------------------------------------");
 		</script>
-		<script>
-			function js_Load() {
-				// zakaj to delam? poglej link
-				// https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
-				document.body.style.visibility='visible';
-			}
-		</script>
-		<noscript><style>body { visibility: visible; }</style></noscript>
 	</head>
 	<!--
 	Hey!
@@ -62,7 +54,7 @@
 	Pricakujemo te!
 		-Ekipa tutorjev Ledine
 	-->
-	<body style="visibility: hidden;" onload="js_Load()"> <!-- glej js_Load() za informacije zakaj je visibility:hidden -->
+	<body>
 		<header>
 			<a href="http://www.ledina.si"><img id="logo" class="desktop" src="media/ledina.png" alt="GL" height="150"></a>
 			<div class="spacer"></div>
