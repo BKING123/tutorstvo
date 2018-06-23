@@ -18,6 +18,7 @@
 #face {
 	flex: 1;
 	width: 100%;
+	border: 1px solid black;
 }
 
 #image {
@@ -29,6 +30,25 @@
 	flex: 1;
 	padding: 1em 1em 1em 2em;
 }
+#data table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: solid none;
+}
+#data table td {
+	padding: 0.5em 1em;
+}
+#data table td:last-child {
+	text-align: right;
+}
+#data table tr {
+	border-bottom: 1px solid black;
+}
+#data table tr:last-child {
+	border: none;
+}
+
 
 /* "EDIT" SECTION */
 #edit {
@@ -37,8 +57,16 @@
 	display: flex;
 	flex-direction: column; /* elementi se vrstijo navzdol */
 }
-#edit i {
+#edit div {
 	flex: 1;
+	font-weight: bold;
+}
+#edit a {
+	color: black;
+	text-decoration: none;
+}
+.icon {
+	margin-right: 0.5em;
 }
 
 /********************************************************************************************************/
@@ -120,7 +148,7 @@ article p {
 	body {
 		background: aliceBlue;
 		margin: 0;
-		padding: 2em;
+		padding: 0;
 	}
 
 	/* ponastavi vse vrednosti */
@@ -133,26 +161,67 @@ article p {
 
 	#profile {
 		flex-direction: column; /* elementi se vrstijo navzdol */
+		padding: 0;
+		margin: 3px;
+		border: 5px outset black;
 	}
 	#profile div { /* vsi <div> elementi znotraj #profile */
 		margin: 0 auto; /* poravnaj na sredino */
 	}
 	#face {
 		border-radius: 100%; /* slika je okrogla */
+		margin-top: 2em;
 	}
-	#edit {
+	div#edit {
 		flex-direction: row;
 		flex-wrap: wrap; /* ce zmanjka prostora lahko gres v novo vrstico */
-		border-left: none; /* odstranimo levi border */
-		border-top: dashed lightBlue; /* isti border naj bo na vrhu */
+		border: none; /* odstranimo levi border */
+		padding: 0;
+		width: 100%;
+
+		background-color: lightgray;
 	}
-	#edit i {
-		margin: 0.5em 1em;
-		display: inline-block;
+	#edit div {
+		text-align: center;
+		padding: 1em;
+		border: 2px inset black;
 	}
+	#edit .icon {
+		display: block;
+		margin: 0;
+	}
+
 
 	#novice {
 		padding: 0;
+	}
+	#novice h2 {
+		border: 2px dashed black;
+		border-style: dashed none;
+		margin: 1.7em 2em 1em 2em;
+		text-align: center;
+	}
+	article p, article h3 {
+		border: none;
+	}
+	article {
+		border: 0.5em solid black;
+		border-style: solid none;
+	}
+	article.novica {
+		border-color: yellow;
+		background-color: lightyellow;
+	}
+	article.oglas {
+		border-color: blue;
+		background-color: lightblue;
+	}
+	article.nujno {
+		border-color: red;
+		background-color: pink;
+	}
+	.novica p, .oglas p, .nujno p {
+		background: initial;
 	}
 
 }
