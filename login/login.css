@@ -105,8 +105,12 @@ button {
 	border-radius: 3px;
 	outline: none; !important
 }
-button:active {
+button:hover {
 	box-shadow: 0 0 10px black;
+	padding: 0;
+}
+button:active {
+	box-shadow: 0 0 10px black inset;
 	background-color: #2a56c6;
 	padding: 0;
 }

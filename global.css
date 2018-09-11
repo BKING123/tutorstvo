@@ -186,6 +186,7 @@ table.features i {
 }
 
 
+
 /* aside je floating box na desni */
 aside h3 { /* naslov: "ne verjamete? poglejte statistiko" */
 	margin: 0;
@@ -295,6 +296,7 @@ summary { /* vprasanje v FAQ */
 details p { /* odgovor v FAQ */
 	margin-left: 1.5em; /* zamaknjen v desno */
 	margin-top: 0;
+	text-align: justify; /* obojestranska poravnava zgleda bol professionalno */
 }
 summary:hover { /* ko das misko na vprasanje */
 	cursor: pointer; /* miska nakaze da lahko kliknemo */
