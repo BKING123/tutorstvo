@@ -8,13 +8,6 @@ Objavljeno na [tutorstvo.ledina.si](https://tutorstvo.ledina.si)
 + [HTML validator](https://validator.w3.org/)
 + [Page speed test](https://developers.google.com/speed/pagespeed/insights/)
 
-### **POZOR!!**
-Prislo je do kopicenja nepotrebnih datotek in map, zato uvajamo novo file shemo.  
-Glej dokumentacijo spodaj.  
-
-Odprt bo nov issue, odpira se pozicija za delo tistemu,
-ki lahko datoteke uredi v nov red, hkrati pa posodobi povezave v kodi.
-
 ---
 
 Opomnik:
@@ -64,41 +57,13 @@ OP: Komentarjev ni nikoli prevec
   - login.css         // stil za login.html
 ```
 
-## Stara file schema:
-```
-- index.html     // glavna stran
-- global.css     // css za glavno stran
-+ media
-  - [media]      // slike, videi, glasba in druga multimedia
-+ kdo_smo
-  - index.html   // stran s podatki o nas
-  - style.css    // stil za sosenji index.html
-+ prijava
-  - index.html   // stran, kjer te vprasa ali bi se prijavil kot dijak ali tutor
-  - style.css    // css za sosednji index.html
-  + dijak
-    - index.html // stran za prijavo dijakov
-    - style.css  // css za sosednji index.html
-  + tutor
-    - index.html // stran za prijavo tutorjev (eTutor/registracija?)
-    - style.css  // css za sosednji index.html
-+ login
-  - index.html   // login v portal eTutor
-  - style.css    // stil za sosednji html
-+ eTutor
-  - index.html   // glavna stran portala eTutor
-  - style.css	 // stil za portal eTutor
-  + registracija
-    - index.html // stran za registracijo tutorja
-    - style.css  // stil za registracijsko stran
-```
 ---
 
 
 ### TODO:
  - ikona za eTutor (favicon + page logo)
  - portal eTutor:
-	1. Glavna stran z novicami in profilom
+	1. Redesign glavne strani z novicami in profilom
 	2. PHP backend za prijavo, registracijo in sledenje podatkom
 	3. urejanje profila
 	4. form, ki ga izpolnejo dijaki po vsaki ucni uri
