@@ -292,7 +292,7 @@ svg.bottom { /* spodnji trikotnik */
 summary { /* vprasanje v FAQ */
 	font-weight: bold;
 	font-size: 1.3em;
-	font-family: 'Trebuchet';
+	font-family: 'Trebuchet MS';
 }
 details p { /* odgovor v FAQ */
 	margin-left: 1.5em; /* zamaknjen v desno */
