@@ -61,13 +61,13 @@
 			<nav>
 				<div class="spacer"></div>
 				<ul>
-					<li><a class="selected" href="index.html"><i class="fa fa-home"></i>Domov</a></li>
+					<li><a class="selected" href="index.php"><i class="fa fa-home"></i>Domov</a></li>
 					<!--<li><a href="https://www.ledina.si/" target="_blank"><i class="fas fa-th"></i>GLedina</a></li>-->
 					<!--<li><a href="#novice"><i class="far fa-newspaper"></i>Novice</a></li>-->
 					<li><a href="#faq"><i class="fas fa-users"></i>Kdo&nbsp;smo</a></li>
-					<li class="desktop"><a href="prijava.html"><i class="fas fa-search"></i>Poišči&nbsp;tutorja</a></li>
-					<!--<li><a href="prijava/tutor/index.html"><i class="fas fa-user-plus"></i>Postani&nbsp;tutor</a></li>-->
-					<li><a href="eTutor/login.html"><i class="fas fa-sign-in-alt"></i>Prijava&nbsp;v&nbsp;eTutor</a></li>
+					<li class="desktop"><a href="prijava.php"><i class="fas fa-search"></i>Poišči&nbsp;tutorja</a></li>
+					<!--<li><a href="prijava/tutor/index.php"><i class="fas fa-user-plus"></i>Postani&nbsp;tutor</a></li>-->
+					<li><a href="eTutor/login.php"><i class="fas fa-sign-in-alt"></i>Prijava&nbsp;v&nbsp;eTutor</a></li>
 				</ul>
 				<div class="spacer"></div>
 			</nav>
@@ -75,7 +75,7 @@
 		<section id="quick">
 			<h1 id="title"><i class="fas fa-graduation-cap"></i>Tutorstvo&nbsp;GL</h1>
 			<p id="description">Prva pomoč proti slabim ocenam!<br>Zastonj inštrukcije od sodijakov, sovrstnikov, ki najbolje poznajo prav tvoje profesorje.<br>Izboljšave vidne že po enem samem srečanju!</p>
-			<a id="signup" href="prijava.html">pOiščI TUtoRjA</a>
+			<a id="signup" href="prijava.php">pOiščI TUtoRjA</a>
 		</section>
 		<main>
 			<section id="stats">
@@ -249,7 +249,7 @@
 				</article>
 
 				<section id="signature">
-					<p>Stran so postavili <a href="eTutor/login.html">tutorji</a> Gimnazije Ledina.</p>
+					<p>Stran so postavili <a href="eTutor/login.php">tutorji</a> Gimnazije Ledina.</p>
 					<!-- TODO: tuki damo link, ki te vrze na github oz. na neko stran z navodili kako pomagat delat stran -->
 					<p><a class="mobile" href="#">Nazaj gor</a></p>
 				</section>
