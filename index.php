@@ -126,7 +126,7 @@
 
 			<section class="quoteShow">
 				<!-- Quotes -->
-				<!--<div class="quote">
+				<div class="quote">
 					<button onclick="plusDivs(-1, true)">&#10094;</button>
 						<img src="media/shakespeare.jpg" class="round">
 						<div>"To be or not to be, that is the question:
@@ -189,7 +189,7 @@
 					}
 				</script>
 
-				-->
+
 			</section>
 
 			<svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
