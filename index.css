@@ -78,7 +78,7 @@ header {
 	flex: 1;
 }
 nav {
-	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, Sans-serif;
+	font-family: 'Open Sans', Helvetica, Sans-serif;
 	display: flex; /* elementi naj se prilagajajo (so enako veliki) */
 	flex-direction: column; /* elementi se vrstijo gor-dol - formacija [spacer, navigacija, spacer] vertikalno poravna linke na sredino */
 }
@@ -233,7 +233,7 @@ svg.bottom { /* spodnji trikotnik */
 /* dokler problem ni resen, smo odstranili quote section, pustili le rumeno crto (iz stilisticnih razlogov) */
 
 .quote { /* posamezen citat v .quoteShow */
-	font-family: 'Helvetica Neue', Helvetica;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 2em;
 	color: #FCCA1C;/*rgba(0,0,0,0.5);*/
@@ -293,7 +293,7 @@ svg.bottom { /* spodnji trikotnik */
 summary { /* vprasanje v FAQ */
 	font-weight: bold;
 	font-size: 1.3em;
-	font-family: 'Trebuchet MS';
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Sans-serif;
 }
 details p { /* odgovor v FAQ */
 	margin-left: 1.5em; /* zamaknjen v desno */

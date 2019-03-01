@@ -37,7 +37,7 @@ section {
 }
 
 h1 {
-	font-family: Trebuchet MS, Sans-serif;
+	font-family: 'Trebuchet MS', sans-serif;
 	text-align: center;
 	font-size: 1.7em;
 	padding: 1em 0;
@@ -49,7 +49,7 @@ h1 {
 input {
 	margin-top: 2em;
 	font-size: 1em;
-	outline: none; !important /* !important pomeni da to velja ne glede na stanje (:hover :active :focus ...) */
+	outline: none; !important
 
 	border: none;
 	border-style: none none dotted none;
