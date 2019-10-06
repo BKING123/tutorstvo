@@ -47,7 +47,6 @@ External fonts:
 
 body {
 	margin: 0;
-	background-color: white;
 	font-family: 'Helvetica Neue', Helvetica, Sans-serif;
 }
 a {
@@ -96,15 +95,22 @@ nav ul li {
 }
 nav i {
 	margin-right: 0.5em;
+	color: rgba(0,0,0,0.3);
 }
 nav a {
 	color: rgba(0,0,0,0.6);
 	margin: 0.5em;
 }
-nav a:hover {
+nav ul:hover a {
+	color: rgba(0,0,0,0.4);
+}
+nav ul:hover a:hover {
 	color: black;
 	text-decoration: none;
 	border-bottom: 1px dashed black;
+}
+nav ul:hover a:hover > i {
+	color: rgba(0,0,0,0.6);
 }
 
 
@@ -113,22 +119,32 @@ nav a:hover {
 #quick {
 	text-align: center;
 	margin: auto 2em;
+	width: 100%;
+	margin: 0;
+	background-color: white;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
 	font-size: 3em;
 }
 #title i { /* ikona v naslovu */
 	margin-right: 0.5em;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 100%;
+	height: 1em;
+	width: 1em;
+	padding: 20px 23px 20px 17px;
+	font-size: 0.7em;
 }
 #description { /* kratek opis tutorstva, kuj pod naslovom */
 	color: rgba(0,0,0,0.6);
 	font-family: 'Trebuchet MS', Sans-serif;
-
+	letter-spacing: 1px;
 	margin-bottom: 2em;
 }
 #signup { /* gumb za hitro prijavo */
-	background-color: #FB5B6C; /* desaturirana magenta iz ledinskega logotipa */
-	border-radius: 1.3em;
+	background-color: hsl(354, 95%, 67%); /* desaturirana magenta iz ledinskega logotipa */
+	border-radius: 2em;
 	color: white;
 	padding: 0.7em 1.5em;
 
@@ -136,24 +152,38 @@ nav a:hover {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 
-	box-shadow: 2px 2px gray; /* 3D efekt */
-	position: relative; /* premaknemo ga 2px gor-desno, zato ker je senca 2px dol-levo, pristane na prvotni poziciji */
-	top: 0px;
-	left: 0px;
+	box-shadow: 2px 4px 2px hsl(354, 95%, 90%); /* 3D efekt */
 }
-#signup:hover { /* miska na gumbu */
-	filter: brightness(90%);
-	box-shadow: 3px 3px gray; /* senca se poveca */
-	top: -1px; /* element pa moramo premakniti bolj gor-desno, da senca ostane na prvotnem mestu (dvigne se gumb, ne spusca se senca) */
-	left: -1px;
+#signup:hover {
+	text-decoration: none;
 }
-#signup:active { /* gumb pritisnjen */
-	filter: brightness(90%);
-	box-shadow: none; /* brez sence */
-	top: 2px; /* gumb je tam, kjer je bila senca - zgleda popolnoma pritisnjen dol */
-	left: 2px;
+#signup_arrow {
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.3);
+	height: 150%;
+	width: 1.5em;
+	display: inline-block;
+	margin-left: 1em;
+	padding: 5px;
+
+	position: relative;
+	left: 0;
+	transition: left 0.1s ease-out;
+
+	animation: nudge 0.2s 0.5s 4 alternate ease-in-out;
+}
+#signup:hover > #signup_arrow {
+	left: 0.5em;
 }
 
+@keyframes nudge {
+	0% {
+		left: 0em;
+	}
+	100% {
+		left: 0.5em;
+	}
+}
 
 /* en glavni div, notri je vse, kar je nizje od quick sectiona */
 main {
