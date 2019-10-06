@@ -78,7 +78,7 @@ header {
 	flex: 1;
 }
 nav {
-	font-family: 'Open Sans', Helvetica, Sans-serif;
+	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, Sans-serif;
 	display: flex; /* elementi naj se prilagajajo (so enako veliki) */
 	flex-direction: column; /* elementi se vrstijo gor-dol - formacija [spacer, navigacija, spacer] vertikalno poravna linke na sredino */
 }
@@ -231,40 +231,39 @@ svg.bottom { /* spodnji trikotnik */
 
 /* PROBLEM: dolgi citati premikajo vsebino pod njimi gor in dol, nemogoce je brati FAQ. */
 /* dokler problem ni resen, smo odstranili quote section, pustili le rumeno crto (iz stilisticnih razlogov) */
-
-.quote { /* posamezen citat v .quoteShow */
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+/*
+.quote { / * posamezen citat v .quoteShow * /
+	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: bold;
 	font-size: 2em;
-	color: #FCCA1C;/*rgba(0,0,0,0.5);*/
-	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.4);*/
-	/*text-shadow: 1px 1px 1px black;*/
+	color: #FCCA1C;/ *rgba(0,0,0,0.5);* /
+	/ *text-shadow: 1px 1px 1px rgba(0,0,0,0.4);* /
+	/ *text-shadow: 1px 1px 1px black;* /
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	animation: fadein 1.5s;
-	word-wrap: break-word; /* predolge besede nikakor ne smejo cez rob ekrana */
-	height: 10em;
+	word-wrap: break-word; / * predolge besede nikakor ne smejo cez rob ekrana * /
 }
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1}
 }
-.quote .author { /* avtor citata */
+.quote .author { / * avtor citata * /
 	display: block;
 	text-align: right;
 }
-.quote .author:before {/* psevdoelement pred avtorjem */
-	content: '-'; /* naj se napise "-Anonymous, 3.g" namesto "Anonymous, 3.g" (dodana crtica) */
+.quote .author:before { / * psevdoelement pred avtorjem * /
+	content: '-'; / * naj se napise "-Anonymous, 3.g" namesto "Anonymous, 3.g" (dodana crtica) * /
 }
-.quote img.round { /* slika avtorja citata */
-	border-radius: 100%; /* okrogla */
-	height: 5em;
+.quote img.round { / * slika avtorja citata * /
+	border-radius: 100%; / * okrogla * /
+	height: 3em;
 	margin-right: 1em;
-	box-shadow: -1px 1px 1px rgba(0,0,0,0.4); /* cisto malo 3D */
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.4); / * cisto malo 3D * /
 }
-.quote button { /* gumbi za premikanje citatov */
+.quote button { / * gumbi za premikanje citatov * /
 	transition: background-color 0.1s ease-out;
 	height: 3em;
 	width: 2em;
@@ -293,7 +292,7 @@ svg.bottom { /* spodnji trikotnik */
 summary { /* vprasanje v FAQ */
 	font-weight: bold;
 	font-size: 1.3em;
-	font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Sans-serif;
+	font-family: 'Trebuchet MS';
 }
 details p { /* odgovor v FAQ */
 	margin-left: 1.5em; /* zamaknjen v desno */
