@@ -133,16 +133,16 @@ article p {
 
 
 .mobile {
-	display: none; /* skrij vse elemente, ekskluzivne mobilni strani*/
+	display: none; /* skrij vse mobile-only */
 }
 
 /* PRAVILA ZA OZKE EKRANE */
-@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px, naj veljajo naslednja pravila: */
+@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px */
 	.desktop {
-		display: none; /* skrij vse elemente, ki so samo na desktop strani */
+		display: none; /* skrij vse desktop-only */
 	}
 	.mobile {
-		display: initial; /* pokazi elemente, ki so samo za mobilno stran */
+		display: initial; /* pokazi vse mobile-only */
 	}
 
 	body {
@@ -165,8 +165,8 @@ article p {
 		margin: 3px;
 		border: 5px outset black;
 	}
-	#profile div { /* vsi <div> elementi znotraj #profile */
-		margin: 0 auto; /* poravnaj na sredino */
+	#profile div {
+		margin: 0 auto;
 	}
 	#face {
 		border-radius: 100%; /* slika je okrogla */
@@ -174,8 +174,8 @@ article p {
 	}
 	div#edit {
 		flex-direction: row;
-		flex-wrap: wrap; /* ce zmanjka prostora lahko gres v novo vrstico */
-		border: none; /* odstranimo levi border */
+		flex-wrap: wrap;
+		border: none;
 		padding: 0;
 		width: 100%;
 

@@ -46,111 +46,111 @@ External fonts:
 */
 
 body {
-	margin: 0; /* spletna stran sega od roba do roba */
-	background-color: white; /* belo ozadje */
-	font-family: 'Helvetica Neue', Helvetica, Sans-serif; /* glavni font je Helvetica Neue */
+	margin: 0;
+	background-color: white;
+	font-family: 'Helvetica Neue', Helvetica, Sans-serif;
 }
 a {
-	text-decoration: none; /* linki naj niso podcrtani */
+	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline; /* ce damo misko na link, naj bo podcrtan */
+	text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Trebuchet MS', Sans-serif; /* glavni font za naslove */
+	font-family: 'Trebuchet MS', Sans-serif;
 }
 
 .fas, .fa {
 	cursor: default; /* font-awesome ikone so naceloma text, ampak nocem text-cursorja */
 }
 a .fas, a .fa {
-	cursor: pointer; /* vseeno pa hocem pointer cursor na ikonah v linkih */
+	cursor: pointer;
 }
 
 
 
 
-/* header je celoten zgornji del (logo + navigacija)*/
+/* celoten zgornji del (logo + navigacija)*/
 header {
-	display: flex; /* flex container - notranjost se avotmatsko prilagaja */
+	display: flex;
 }
-.spacer { /* element, ki ga uporabljamo za poravnavo na sredino */
+.spacer { /* za poravnavo na sredino */
 	flex: 1;
 }
 nav {
 	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, Sans-serif;
-	display: flex; /* elementi naj se prilagajajo (so enako veliki) */
-	flex-direction: column; /* elementi se vrstijo gor-dol - formacija [spacer, navigacija, spacer] vertikalno poravna linke na sredino */
+	display: flex;
+	flex-direction: column; /* gor-dol formacija [spacer, navigacija, spacer] vertikalno poravna linke na sredino */
 }
 nav ul {
-	padding: 0; /* nocemo paddinga (po defaultu ga je malo na levi, kjer naj bi bile pikice, ker je to seznam) */
-	margin: 1em; /* odrine 1em prostora v vse smeri */
+	padding: 0; /* po defaultu je padding na levi, kjer naj bi bile pikice, ker je to seznam */
+	margin: 1em;
 
-	display: flex; /* elementi naj prilagodijo sirino, da so enaki */
-	flex-wrap: wrap; /* ce zmanjka prostora, grejo lahko v novo vrstico */
-	justify-content: right; /* poravnani so na desno (ne deluje v nekaterih brskalnikih)*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right; /* ne deluje v nekaterih brskalnikih */
 }
 nav ul li {
-	display: inline; /* po defaultu so vsak v svoji vrstici, mi hocemo da so vsi v eni */
-	margin: 0.5em; /* malo prostora v vse smeri */
+	display: inline;
+	margin: 0.5em;
 }
 nav i {
 	margin-right: 0.5em;
 }
 nav a {
-	color: rgba(0,0,0,0.6); /* barva texta v navigaciji (nekoliko transparentno crna - zgleda sivo ker je na belem ozadju) */
+	color: rgba(0,0,0,0.6);
 	margin: 0.5em;
 }
 nav a:hover {
-	color: black; /* barva je cisto crna ce damo gor misko */
-	text-decoration: none; /* prej smo napisal da se linki podcrtajo ce damo gor misko, ampak te se ne smejo */
-	border-bottom: 1px dashed black; /* namesto da jih podcrtamo, jim damo dashed border-bottom (zgleda lepse) */
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dashed black;
 }
 
 
 
 /* quick section - glavni naslov, short description in gumb za hitro prijavo */
 #quick {
-	text-align: center; /* vse v quick sectionu je na sredini */
-	margin: auto 2em; /* levo-desno je margin auto, gor-dol je margin 2em */
+	text-align: center;
+	margin: auto 2em;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
-	font-size: 3em; /* veeeelik font */
+	font-size: 3em;
 }
 #title i { /* ikona v naslovu */
-	margin-right: 0.5em; /* .5em presledka med ikono in textom */
+	margin-right: 0.5em;
 }
 #description { /* kratek opis tutorstva, kuj pod naslovom */
-	color: rgba(0,0,0,0.6); /* ista barva kot v navigaciji - nekoliko transparentno crna, ki zgleda sivo zaradi belega ozadja */
-	font-family: 'Trebuchet MS', Sans-serif; /* Trebuchet font */
+	color: rgba(0,0,0,0.6);
+	font-family: 'Trebuchet MS', Sans-serif;
 
-	margin-bottom: 2em; /* malce prostora za dihat */
+	margin-bottom: 2em;
 }
 #signup { /* gumb za hitro prijavo */
 	background-color: #FB5B6C; /* desaturirana magenta iz ledinskega logotipa */
-	border-radius: 1.3em; /* zaobljeni robobi */
-	color: white; /* bel text */
-	padding: 0.7em 1.5em; /* prostor za dihat */
+	border-radius: 1.3em;
+	color: white;
+	padding: 0.7em 1.5em;
 
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px; /* zaradi vecjega presledka med crkami zgleda font vecji, ceprav v resnici ni */
-	text-transform: uppercase; /* velike crke */
+	letter-spacing: 1px;
+	text-transform: uppercase;
 
-	box-shadow: 2px 2px gray; /* 3D efekt, zato da element izgleda bolj kot dejanski gumb */
+	box-shadow: 2px 2px gray; /* 3D efekt */
 	position: relative; /* premaknemo ga 2px gor-desno, zato ker je senca 2px dol-levo, pristane na prvotni poziciji */
 	top: 0px;
 	left: 0px;
 }
 #signup:hover { /* miska na gumbu */
-	filter: brightness(90%); /* malo potemnimo barvo */
+	filter: brightness(90%);
 	box-shadow: 3px 3px gray; /* senca se poveca */
 	top: -1px; /* element pa moramo premakniti bolj gor-desno, da senca ostane na prvotnem mestu (dvigne se gumb, ne spusca se senca) */
 	left: -1px;
 }
 #signup:active { /* gumb pritisnjen */
-	filter: brightness(90%); /* potemnitev */
+	filter: brightness(90%);
 	box-shadow: none; /* brez sence */
-	top: 2px; /* gumb pa je tam, kjer je bila senca - zgleda popolnoma pritisnjen dol */
+	top: 2px; /* gumb je tam, kjer je bila senca - zgleda popolnoma pritisnjen dol */
 	left: 2px;
 }
 
@@ -162,9 +162,9 @@ main {
 
 
 #stats { /* statistika - "Prednosti tutorstva" + floating box na desni */
-	display: flex; /* oba elementa sta enako siroka */
-	flex-direction: row; /* se vrstita od leve proti desni namesto en pod drugim */
-	padding: 2em; /* prostor, ki ju odmika od roba ekrana */
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
 }
 
 article {
@@ -193,12 +193,12 @@ aside h3 { /* naslov: "ne verjamete? poglejte statistiko" */
 	font-size: 1.2em;
 }
 aside .floaty {
-	min-width: 40%; /* najmanj 40% sirine ekrana */
-	box-shadow: -5px 2px 10px lightgray; /* 3D floating effect */
-	padding: 2em; /* prostor med borderjem in notranjim textom */
-	border-radius: 5px; /* cist mal zaobljeni robovi */
+	min-width: 40%;
+	box-shadow: -5px 2px 10px lightgray;
+	padding: 2em;
+	border-radius: 5px;
 }
-@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px, naj veljajo naslednja pravila: */
+@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px */
     #stats {
         flex-direction: column; /* elementa v stats sectionu naj si sledita gor-dol (aside naj pade pod "prednosti tutorstva") */
     }
@@ -207,7 +207,7 @@ aside .floaty {
 /* trenutno edina svg elemnta sta trikotnika pri rumeni locilni crti */
 svg {
 	display: block; /* naj rezervira celotno vrstico zase */
-	width: 100%; /* cez celo sirino */
+	width: 100%;
 	height: 50px;
 }
 svg.top { /* zgornji trikotnik */
@@ -222,10 +222,10 @@ svg.bottom { /* spodnji trikotnik */
 }
 .quoteShow { /* prostor, kamor grejo citati (trenutno prazen)*/
 	background-color: LemonChiffon;
-	color: white; /* bel text */
+	color: white;
 	width: 100%;
 	padding: 2em;
-	box-sizing: border-box; /* nimam pojma, sam ne spreminjat */
+	box-sizing: border-box;
 }
 
 
@@ -292,18 +292,18 @@ svg.bottom { /* spodnji trikotnik */
 summary { /* vprasanje v FAQ */
 	font-weight: bold;
 	font-size: 1.3em;
-	font-family: 'Trebuchet MS';
+	font-family: 'Trebuchet MS', sans-serif;
 }
 details p { /* odgovor v FAQ */
-	margin-left: 1.5em; /* zamaknjen v desno */
+	margin-left: 1.5em;
 	margin-top: 0;
 	text-align: justify; /* obojestranska poravnava zgleda bol professionalno */
 }
-summary:hover { /* ko das misko na vprasanje */
-	cursor: pointer; /* miska nakaze da lahko kliknemo */
+summary:hover {
+	cursor: pointer;
 }
 summary:focus {
-	outline: none; /* nocm grdih okvirckov k so tam po defaultu */
+	outline: none;
 }
 
 
