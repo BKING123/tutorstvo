@@ -121,7 +121,6 @@ nav ul:hover a:hover > i {
 	margin: auto 2em;
 	width: 100%;
 	margin: 0;
-	background-color: white;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
 	font-size: 3em;
@@ -140,10 +139,22 @@ nav ul:hover a:hover > i {
 	color: rgba(0,0,0,0.6);
 	font-family: 'Trebuchet MS', Sans-serif;
 	letter-spacing: 1px;
-	margin-bottom: 2em;
+	margin-bottom: 5em;
 }
-#signup { /* gumb za hitro prijavo */
+
+
+
+#signup {
 	background-color: hsl(354, 95%, 67%); /* desaturirana magenta iz ledinskega logotipa */
+	box-shadow: 2px 4px 2px hsl(354, 95%, 90%);
+	margin-right: 2em;
+}
+#join {
+	background-color: hsl(196, 54%, 60%); /* desaturirana modra iz ledinskega logotipa */
+	box-shadow: 2px 4px 2px hsl(196, 54%, 79%);
+	margin-left: 2em;
+}
+.quickbutton { /* gumb za hitro prijavo */
 	border-radius: 2em;
 	color: white;
 	padding: 0.7em 1.5em;
@@ -151,43 +162,47 @@ nav ul:hover a:hover > i {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-
-	box-shadow: 2px 4px 2px hsl(354, 95%, 90%); /* 3D efekt */
 }
-#signup:hover {
+.quickbutton:hover {
 	text-decoration: none;
 }
-#signup_arrow {
+.quickbutton_arrow {
 	border-radius: 100%;
 	background-color: rgba(0,0,0,0.3);
 	height: 150%;
 	width: 1.5em;
 	display: inline-block;
 	margin-left: 1em;
+	margin-right: 1em;
 	padding: 5px;
 
 	position: relative;
-	left: 0;
+	left: 0.6em;
 	transition: left 0.1s ease-out;
 
-	animation: nudge 0.2s 0.5s 4 alternate ease-in-out;
+	animation: nudge 0.5s 0.5s 2;
 }
-#signup:hover > #signup_arrow {
-	left: 0.5em;
+.quickbutton:hover > .quickbutton_arrow {
+	left: 2em;
 }
 
 @keyframes nudge {
 	0% {
-		left: 0em;
+		left: 0.6em;
 	}
-	100% {
-		left: 0.5em;
+	25% {
+		left: 2em;
+	}
+	75% {
+		left: 0em;
 	}
 }
 
+
 /* en glavni div, notri je vse, kar je nizje od quick sectiona */
 main {
-	padding-top: 4em; /* plac za dihat */
+	background-color: white;
+	margin-top: 5em;
 }
 
 
@@ -257,63 +272,6 @@ svg.bottom { /* spodnji trikotnik */
 	padding: 2em;
 	box-sizing: border-box;
 }
-
-
-/* PROBLEM: dolgi citati premikajo vsebino pod njimi gor in dol, nemogoce je brati FAQ. */
-/* dokler problem ni resen, smo odstranili quote section, pustili le rumeno crto (iz stilisticnih razlogov) */
-/*
-.quote { / * posamezen citat v .quoteShow * /
-	font-family: 'Helvetica Neue', Helvetica;
-	font-weight: bold;
-	font-size: 2em;
-	color: #FCCA1C;/ *rgba(0,0,0,0.5);* /
-	/ *text-shadow: 1px 1px 1px rgba(0,0,0,0.4);* /
-	/ *text-shadow: 1px 1px 1px black;* /
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	animation: fadein 1.5s;
-	word-wrap: break-word; / * predolge besede nikakor ne smejo cez rob ekrana * /
-}
-@keyframes fadein {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-.quote .author { / * avtor citata * /
-	display: block;
-	text-align: right;
-}
-.quote .author:before { / * psevdoelement pred avtorjem * /
-	content: '-'; / * naj se napise "-Anonymous, 3.g" namesto "Anonymous, 3.g" (dodana crtica) * /
-}
-.quote img.round { / * slika avtorja citata * /
-	border-radius: 100%; / * okrogla * /
-	height: 3em;
-	margin-right: 1em;
-	box-shadow: -1px 1px 1px rgba(0,0,0,0.4); / * cisto malo 3D * /
-}
-.quote button { / * gumbi za premikanje citatov * /
-	transition: background-color 0.1s ease-out;
-	height: 3em;
-	width: 2em;
-	vertical-align: center;
-	background-color: transparent;
-	color: black;
-	border: none;
-	border-radius: 10%;
-	margin: auto 2em;
-	font-size: 0.5em;
-}
-.quoteShow:hover button {
-	background-color: rgba(0,0,0,0.2);
-}
-.quoteShow:hover button:hover {
-	color: white;
-	background-color: rgba(0,0,0,0.7);
-}
-*/
-
 
 
 #faq {
