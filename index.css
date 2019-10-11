@@ -320,7 +320,10 @@ table.features i { /* ikone */
 		display: initial;
 	}
 
-
+	html {
+		font-size: 0.7em;
+	}
+	
 	nav {
 		flex: 1;
 		position: sticky;
