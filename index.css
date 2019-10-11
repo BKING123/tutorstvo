@@ -306,6 +306,8 @@ table.features i { /* ikone */
 
 
 
+
+
 .mobile {
 	display: none;
 }
@@ -323,7 +325,7 @@ table.features i { /* ikone */
 	html {
 		font-size: 0.7em;
 	}
-	
+
 	nav {
 		flex: 1;
 		position: sticky;
