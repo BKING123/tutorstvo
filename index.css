@@ -122,6 +122,7 @@ nav ul:hover a:hover > i {
 	margin: 0;
 
 	background-image: url("media/skupinska_ucenje.jpg");
+	background-size: cover;
 }
 #shadow {
 	margin: 0;
@@ -160,12 +161,12 @@ nav ul:hover a:hover > i {
 
 
 
-#signup {
+#signup { /* poisci tutorja */
 	background-color: hsl(354, 95%, 67%); /* desaturirana magenta iz ledinskega logotipa */
 	box-shadow: 2px 4px 2px hsl(354, 95%, 90%);
 	margin-right: 2em;
 }
-#join {
+#join { /* postani tutor */
 	background-color: hsl(196, 54%, 60%); /* desaturirana modra iz ledinskega logotipa */
 	box-shadow: 2px 4px 2px hsl(196, 54%, 79%);
 	margin-left: 2em;
@@ -224,31 +225,31 @@ article#prednosti { /* statistika - "Prednosti tutorstva" */
 	display: flex;
 	flex-direction: row;
 	padding: 0 2em;
+
+	margin-top: 3em;
 }
 
-#stats h2 {
-	font-size: 2em;
+
+#stats section h3.article.title { /* za dijake / za tutorje */
+	font-size: 1.5em;
 	text-align: center;
 }
-
-#stats table h4 {
-	font-size: 1.2em;
-	margin-bottom: 0;
-}
-
 #stats article {
 	margin-right: 2em;
 }
 #stats section#za_dijake  {
 	padding-right: 2em;
-	border-right: 4px dashed lightblue;
+	border-right: 4px dashed hsl(196, 54%, 60%);
 }
 #stats section#za_tutorje  {
 	padding-left: 2em;
 }
-#stats section h3.article.title { /* za dijake / za tutorje */
-	font-size: 1.5em;
-	text-align: center;
+
+
+#stats table h4 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+	color: hsl(196, 54%, 40%);
 }
 table.features {
 	margin-bottom: 2em;
@@ -258,7 +259,7 @@ table.features tr {
 }
 table.features i { /* ikone */
 	font-size: 2.5em;
-	color: lightblue;
+	color: hsl(196, 54%, 60%);
 	margin-right: 16px;
 }
 
