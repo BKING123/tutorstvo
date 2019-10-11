@@ -118,12 +118,25 @@ nav ul:hover a:hover > i {
 /* quick section - glavni naslov, short description in gumb za hitro prijavo */
 #quick {
 	text-align: center;
-	margin: auto 2em;
 	width: 100%;
 	margin: 0;
+
+	background-image: url("media/skupinska_ucenje.jpg");
+}
+#shadow {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255,255,255,.8);
+	height: 100%;
+
+	padding-bottom: 5em;
+	padding-top: 5em;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
 	font-size: 3em;
+	margin-top: 0;
+
+	text-shadow: 1px 1px 1px white, -1px -1px 1px white;
 }
 #title i { /* ikona v naslovu */
 	margin-right: 0.5em;
@@ -134,12 +147,15 @@ nav ul:hover a:hover > i {
 	width: 1em;
 	padding: 20px 23px 20px 17px;
 	font-size: 0.7em;
+	text-shadow: none;
 }
 #description { /* kratek opis tutorstva, kuj pod naslovom */
-	color: rgba(0,0,0,0.6);
+	color: rgba(0,0,0,0.8);
 	font-family: 'Trebuchet MS', Sans-serif;
 	letter-spacing: 1px;
 	margin-bottom: 5em;
+
+	text-shadow: 1px 1px 1px white, -1px -1px 1px white;
 }
 
 
@@ -169,7 +185,6 @@ nav ul:hover a:hover > i {
 .quickbutton_arrow {
 	border-radius: 100%;
 	background-color: rgba(0,0,0,0.3);
-	height: 150%;
 	width: 1.5em;
 	display: inline-block;
 	margin-left: 1em;
@@ -202,21 +217,38 @@ nav ul:hover a:hover > i {
 /* en glavni div, notri je vse, kar je nizje od quick sectiona */
 main {
 	background-color: white;
-	margin-top: 5em;
 }
 
 
-#stats { /* statistika - "Prednosti tutorstva" + floating box na desni */
+article#prednosti { /* statistika - "Prednosti tutorstva" */
 	display: flex;
 	flex-direction: row;
-	padding: 2em;
+	padding: 0 2em;
 }
 
-article {
+#stats h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#stats table h4 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+#stats article {
 	margin-right: 2em;
 }
-h3.article.title {
-	font-size: 2em;
+#stats section#za_dijake  {
+	padding-right: 2em;
+	border-right: 4px dashed lightblue;
+}
+#stats section#za_tutorje  {
+	padding-left: 2em;
+}
+#stats section h3.article.title { /* za dijake / za tutorje */
+	font-size: 1.5em;
+	text-align: center;
 }
 table.features {
 	margin-bottom: 2em;
@@ -224,7 +256,7 @@ table.features {
 table.features tr {
 	margin-bottom: 0.5em;
 }
-table.features i {
+table.features i { /* ikone */
 	font-size: 2.5em;
 	color: lightblue;
 	margin-right: 16px;
@@ -232,65 +264,27 @@ table.features i {
 
 
 
-/* aside je floating box na desni */
-aside h3 { /* naslov: "ne verjamete? poglejte statistiko" */
-	margin: 0;
-	font-size: 1.2em;
-}
-aside .floaty {
-	min-width: 40%;
-	box-shadow: -5px 2px 10px lightgray;
-	padding: 2em;
-	border-radius: 5px;
-}
-@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px */
-    #stats {
-        flex-direction: column; /* elementa v stats sectionu naj si sledita gor-dol (aside naj pade pod "prednosti tutorstva") */
-    }
-}
-
-/* trenutno edina svg elemnta sta trikotnika pri rumeni locilni crti */
-svg {
-	display: block; /* naj rezervira celotno vrstico zase */
-	width: 100%;
-	height: 50px;
-}
-svg.top { /* zgornji trikotnik */
-	fill: LemonChiffon;
-	background: white;
-	stroke: LemonChiffon;
-}
-svg.bottom { /* spodnji trikotnik */
-	fill: white;
-	background: LemonChiffon;
-	stroke: white;
-}
-.quoteShow { /* prostor, kamor grejo citati (trenutno prazen)*/
-	background-color: LemonChiffon;
-	color: white;
-	width: 100%;
-	padding: 2em;
-	box-sizing: border-box;
-}
-
 
 #faq {
 	padding: 0 2em; /*  gor-dol 0  *  levo-desno 2em  */
 }
-summary { /* vprasanje v FAQ */
+#faq h3.article.title {
+	font-size: 2em;
+}
+#faq summary { /* vprasanje v FAQ */
 	font-weight: bold;
 	font-size: 1.3em;
 	font-family: 'Trebuchet MS', sans-serif;
 }
-details p { /* odgovor v FAQ */
+#faq details p { /* odgovor v FAQ */
 	margin-left: 1.5em;
 	margin-top: 0;
 	text-align: justify; /* obojestranska poravnava zgleda bol professionalno */
 }
-summary:hover {
+#faq summary:hover {
 	cursor: pointer;
 }
-summary:focus {
+#faq summary:focus {
 	outline: none;
 }
 
@@ -316,16 +310,9 @@ summary:focus {
 	display: none;
 }
 
-/* OZKI EKRANI */
-@media screen and (max-width: 550px), screen and (max-height: 500px) {
-	i.fa, i.fas, table.features i, #title i {
-		margin: 0;
-		display: block;
-	}
-	article {
-		margin: 0;
-	}
-
+/* OZKI EKRANI - mobile view */
+/* TODO: this is ugly as shit */
+@media screen and (max-width: 700px) {
 	.desktop {
 		display: none;
 	}
@@ -333,15 +320,7 @@ summary:focus {
 		display: initial;
 	}
 
-	#quick {
-		margin: auto;
-	}
-	#quick p, #quick a {
-		margin: 2em;
-	}
-	header .spacer {
-		flex: 0;
-	}
+
 	nav {
 		flex: 1;
 		position: sticky;
@@ -364,20 +343,43 @@ summary:focus {
 		color: darkgray;
 	}
 
-	#signup {
-		display: block;
-		line-height: 2em;
+	h1#title i {
+		display: inline;
+		padding: 20px;
+		margin: 0;
+		margin-bottom: 1em;
+	}
+	#quick {
+		margin: auto;
+	}
+	#quick p, #quick a {
+		margin: 2em;
 	}
 
-    tr td {
+	#quick #buttons {
+		margin-top: 3em;
+	}
+	#quick #buttons a {
+		display: inline-block;
+		margin: 1em;
+	}
+
+	/* ikonce v "prednosti tutorstva" so nad textom */
+    #stats tr td {
         display: block;
 		text-align: center;
     }
-	tr td:first-child {
+	#stats tr td:first-child {
 		margin-top: 1em;
 	}
 
-	h3 {
-		text-align: center;
+
+
+	i.fa, i.fas, table.features i {
+		margin: 0;
+		display: block;
+	}
+	article {
+		margin: 0;
 	}
 }
