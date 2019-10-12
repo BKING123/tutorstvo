@@ -130,8 +130,8 @@ nav ul:hover a:hover > i {
 	background-color: rgba(255,255,255,.8);
 	height: 100%;
 
-	padding-bottom: 8em;
-	padding-top: 5em;
+	padding-bottom: 13em;
+	padding-top: 8em;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
 	font-size: 3em;
@@ -142,13 +142,14 @@ nav ul:hover a:hover > i {
 #title i { /* ikona v naslovu */
 	margin-right: 0.5em;
 	color: white;
-	background-color: rgba(0,0,0,0.8);
+	background-color: hsl(0, 0%, 15%);
 	border-radius: 100%;
 	height: 1em;
 	width: 1em;
 	padding: 20px 23px 20px 17px;
 	font-size: 0.7em;
 	text-shadow: none;
+	box-shadow: 1px 1px 1px white, -1px -1px 1px white;
 }
 #description { /* kratek opis tutorstva, kuj pod naslovom */
 	color: rgba(0,0,0,0.8);
@@ -172,6 +173,7 @@ nav ul:hover a:hover > i {
 	margin-left: 2em;
 }
 .quickbutton { /* gumb za hitro prijavo */
+	font-size: 1.15em;
 	border-radius: 2em;
 	color: white;
 	padding: 0.7em 1.5em;
@@ -241,21 +243,38 @@ article#prednosti { /* statistika - "Prednosti tutorstva" */
 	line-height: 1.5em;
 }
 #stats section h3.article.title { /* za dijake / za tutorje */
-	font-size: 1.5em;
 	text-align: center;
+	color: white;
+	padding: 0.5em 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	width: 60%;
+	position: relative;
+	left: 20%;
+}
+#stats #za_dijake h3.article.title {
+	background-color: hsl(354, 95%, 67%);
+}
+#stats #za_tutorje h3.article.title {
+	background-color: hsl(196, 54%, 40%);
 }
 #stats section#za_dijake  {
 	padding-right: 2em;
-	border-right: 4px dashed hsl(196, 54%, 60%);
+	border-right: 4px dashed hsl(0, 0%, 60%);
 }
 #stats section#za_tutorje  {
 	padding-left: 2em;
 }
 
-
 #stats table h4 {
 	font-size: 1.2em;
 	margin-bottom: 0;
+}
+#stats section#za_dijake table h4, #za_dijake i {
+	color: hsl(354, 95%, 67%);
+}
+#stats section#za_tutorje table h4, #za_tutorje i {
 	color: hsl(196, 54%, 40%);
 }
 table.features {
