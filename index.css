@@ -168,7 +168,7 @@ nav ul:hover a:hover > i {
 }
 #join { /* postani tutor */
 	background-color: hsl(196, 54%, 60%); /* desaturirana modra iz ledinskega logotipa */
-	box-shadow: 2px 4px 2px hsl(196, 54%, 79%);
+	box-shadow: 2px 4px 2px hsl(196, 54%, 90%);
 	margin-left: 2em;
 }
 .quickbutton { /* gumb za hitro prijavo */
@@ -229,13 +229,12 @@ article#prednosti { /* statistika - "Prednosti tutorstva" */
 	margin-top: 3em;
 }
 
-
+#stats {
+	line-height: 1.5em;
+}
 #stats section h3.article.title { /* za dijake / za tutorje */
 	font-size: 1.5em;
 	text-align: center;
-}
-#stats article {
-	margin-right: 2em;
 }
 #stats section#za_dijake  {
 	padding-right: 2em;
@@ -268,6 +267,7 @@ table.features i { /* ikone */
 
 #faq {
 	padding: 0 2em; /*  gor-dol 0  *  levo-desno 2em  */
+	line-height: 1.5em;
 }
 #faq h3.article.title {
 	font-size: 2em;
@@ -276,6 +276,7 @@ table.features i { /* ikone */
 	font-weight: bold;
 	font-size: 1.3em;
 	font-family: 'Trebuchet MS', sans-serif;
+	margin: 1em 0 0.3em 0;
 }
 #faq details p { /* odgovor v FAQ */
 	margin-left: 1.5em;
@@ -330,6 +331,7 @@ table.features i { /* ikone */
 	nav {
 		flex: 1;
 		position: sticky;
+		top: 0;
 	}
 	nav ul {
 		margin: 0;
@@ -341,11 +343,14 @@ table.features i { /* ikone */
 		background-color: black;
 		flex: 1;
 	}
-	nav a {
+	nav a, nav a i {
 		margin: 0;
 		color: white;
 	}
-	nav a:hover {
+	nav ul:hover a {
+		color: white;
+	}
+	nav ul:hover a:hover, nav ul:hover a:hover i {
 		color: darkgray;
 	}
 
