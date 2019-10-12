@@ -130,7 +130,7 @@ nav ul:hover a:hover > i {
 	background-color: rgba(255,255,255,.8);
 	height: 100%;
 
-	padding-bottom: 5em;
+	padding-bottom: 8em;
 	padding-top: 5em;
 }
 #title { /* glavni naslov (Tutorstvo GL) */
@@ -224,9 +224,17 @@ main {
 article#prednosti { /* statistika - "Prednosti tutorstva" */
 	display: flex;
 	flex-direction: row;
-	padding: 0 2em;
+	padding: 2em;
 
-	margin-top: 3em;
+	box-sizing: border-box;
+	position: relative;
+	top: -5em;
+	background-color: white;
+	width: 86vw;
+	left: 7vw;
+
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 #stats {
@@ -328,32 +336,6 @@ table.features i { /* ikone */
 		font-size: 0.7em;
 	}
 
-	nav {
-		flex: 1;
-		position: sticky;
-		top: 0;
-	}
-	nav ul {
-		margin: 0;
-		text-align: center;
-	}
-	nav ul li {
-		margin: 0;
-		padding: 0.5em;
-		background-color: black;
-		flex: 1;
-	}
-	nav a, nav a i {
-		margin: 0;
-		color: white;
-	}
-	nav ul:hover a {
-		color: white;
-	}
-	nav ul:hover a:hover, nav ul:hover a:hover i {
-		color: darkgray;
-	}
-
 	h1#title i {
 		display: inline;
 		padding: 20px;
@@ -373,6 +355,13 @@ table.features i { /* ikone */
 	#quick #buttons a {
 		display: inline-block;
 		margin: 1em;
+	}
+
+	article#prednosti {
+		width: 100%;
+		left: 0;
+		border-radius: 0;
+		box-shadow: none;
 	}
 
 	/* ikonce v "prednosti tutorstva" so nad textom */
