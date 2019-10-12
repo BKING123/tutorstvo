@@ -123,6 +123,7 @@ nav ul:hover a:hover > i {
 
 	background-image: url("media/skupinska_ucenje.jpg");
 	background-size: cover;
+	background-position: center;
 }
 #shadow {
 	margin: 0;
@@ -299,8 +300,6 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 }
 
 
-
-
 #faq {
 	padding: 0 2em; /*  gor-dol 0  *  levo-desno 2em  */
 	line-height: 1.5em;
@@ -327,6 +326,22 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 }
 
 
+
+#quick_feedback {
+	margin-top: 2em;
+	width: 400px;
+	height: 240px;
+	display: inline-block;
+	box-shadow: 0 0 5px hsl(0, 0%, 90%);
+	position: relative;
+	left: calc(50% - 200px);
+}
+#quick_feedback iframe {
+	max-height: 240px !important;
+	min-height: 240px !important;
+}
+
+
 /* footer */
 #footer { /* kje nas najdete */
 	background-color: LemonChiffon;
@@ -341,6 +356,7 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 	font-weight: bold;
 	margin-top: 3em;
 }
+
 
 
 
