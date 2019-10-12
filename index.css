@@ -198,7 +198,7 @@ nav ul:hover a:hover > i {
 	left: 0.6em;
 	transition: left 0.1s ease-out;
 
-	animation: nudge 0.5s 0.5s 2;
+	animation: nudge 1s 0.5s 1 ease-out;
 }
 .quickbutton:hover > .quickbutton_arrow {
 	left: 2em;
@@ -208,14 +208,22 @@ nav ul:hover a:hover > i {
 	0% {
 		left: 0.6em;
 	}
-	25% {
+	20% {
 		left: 2em;
 	}
-	75% {
+	40% {
 		left: 0em;
 	}
+	60% {
+		left: 2em;
+	}
+	80% {
+		left: 0em;
+	}
+	100% {
+		left: 0.6em;
+	}
 }
-
 
 /* en glavni div, notri je vse, kar je nizje od quick sectiona */
 main {
@@ -223,10 +231,11 @@ main {
 }
 
 
-article#prednosti { /* statistika - "Prednosti tutorstva" */
+section#prednosti { /* statistika - "Prednosti tutorstva" */
 	display: flex;
 	flex-direction: row;
 	padding: 2em;
+	line-height: 1.5em;
 
 	box-sizing: border-box;
 	position: relative;
@@ -238,14 +247,14 @@ article#prednosti { /* statistika - "Prednosti tutorstva" */
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
-
-#stats {
-	line-height: 1.5em;
+#prednosti h3, #prednosti h4 {
+	font-family: 'Open Sans', Sans-serif;
 }
-#stats section h3.article.title { /* za dijake / za tutorje */
+
+#prednosti h3 { /* za dijake / za tutorje */
 	text-align: center;
 	color: white;
-	padding: 0.5em 0;
+	padding: 0.5em 1em;
 	border-radius: 5px;
 	text-transform: uppercase;
 	box-sizing: border-box;
@@ -253,37 +262,37 @@ article#prednosti { /* statistika - "Prednosti tutorstva" */
 	position: relative;
 	left: 20%;
 }
-#stats #za_dijake h3.article.title {
+#prednosti #za_dijake h3 {
 	background-color: hsl(354, 95%, 67%);
 }
-#stats #za_tutorje h3.article.title {
-	background-color: hsl(196, 54%, 40%);
+#prednosti #za_tutorje h3 {
+	background-color: hsl(196, 54%, 60%);
 }
-#stats section#za_dijake  {
+#prednosti #za_dijake {
 	padding-right: 2em;
 	border-right: 4px dashed hsl(0, 0%, 60%);
 }
-#stats section#za_tutorje  {
+#prednosti #za_tutorje {
 	padding-left: 2em;
 }
 
-#stats table h4 {
+#prednosti table h4 {
 	font-size: 1.2em;
 	margin-bottom: 0;
 }
-#stats section#za_dijake table h4, #za_dijake i {
+#prednosti #za_dijake table h4, #prednosti #za_dijake i {
 	color: hsl(354, 95%, 67%);
 }
-#stats section#za_tutorje table h4, #za_tutorje i {
-	color: hsl(196, 54%, 40%);
+#prednosti #za_tutorje table h4, #prednosti #za_tutorje i {
+	color: hsl(196, 54%, 60%);
 }
-table.features {
+#prednosti table {
 	margin-bottom: 2em;
 }
-table.features tr {
+#prednosti table tr {
 	margin-bottom: 0.5em;
 }
-table.features i { /* ikone */
+#prednosti table i { /* ikone */
 	font-size: 2.5em;
 	color: hsl(196, 54%, 60%);
 	margin-right: 16px;
@@ -342,7 +351,6 @@ table.features i { /* ikone */
 }
 
 /* OZKI EKRANI - mobile view */
-/* TODO: this is ugly as shit */
 @media screen and (max-width: 700px) {
 	.desktop {
 		display: none;
@@ -376,29 +384,29 @@ table.features i { /* ikone */
 		margin: 1em;
 	}
 
-	article#prednosti {
+	section#prednosti {
 		width: 100%;
 		left: 0;
 		border-radius: 0;
 		box-shadow: none;
 	}
-
 	/* ikonce v "prednosti tutorstva" so nad textom */
-    #stats tr td {
+    #prednosti tr td {
         display: block;
 		text-align: center;
     }
-	#stats tr td:first-child {
+	#prednosti tr td:first-child {
 		margin-top: 1em;
 	}
 
 
 
-	i.fa, i.fas, table.features i {
+	i.fa, i.fas, #prednosti table i {
 		margin: 0;
 		display: block;
 	}
-	article {
-		margin: 0;
+
+	#prednosti h4 {
+		margin-top: 0.5em;
 	}
 }
