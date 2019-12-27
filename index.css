@@ -1,0 +1,428 @@
+/* font-awesome je dodan v htmlju, HelveticaNeue in OpenSans pa spodaj */
+/*@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');*/
+/*@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue%7COpen+Sans:800');*/
+
+
+
+/*  Bil je en mejhn problem s CORS headerji na fonts.google.com, zato smo font stylesheet skopiral sem  */
+/* to ni treba skrbet, sam pust te fonte tuki pr miru */
+@font-face { /* latin-ext (sumniki) */
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica Neue'), local('HelveticaNeue'), url('https://fonts.gstatic.com/l/font?kit=jAnfgHBgCsv4eNLTaMECf8DQsNS1exCsfw&skey=4ad46dd97873f7d7&v=v8'), url('media/Helvetica_Neue_EXT.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face { /* latin */
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica Neue'), local('HelveticaNeue'), url('https://fonts.gstatic.com/l/font?kit=jAnfgHBgCsv4eNLTaMECf8DQsNS7exA&skey=4ad46dd97873f7d7&v=v8'), url('media/Helvetica_Neue.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face { /* latin-ext (sumniki) */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2'), url('media/Open_Sans_EXT.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face { /* latin */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2'), url('media/Open_Sans.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*
+===============
+External fonts:
+
+	font-family: 'Helvetica Neue', Helvetica;
+	font-family: 'Trebuchet MS', Helvetica; (NI DODAN! ker je od microsofta in je copyrighted. Racunam na to, da ga racunalniki ze majo)
+	font-family: 'Open Sans', 'Trebuchet MS', Helvetica;
+
+*/
+
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Trebuchet MS', Sans-serif;
+}
+
+.fas, .fa {
+	cursor: default; /* font-awesome ikone so naceloma text, ampak nocem text-cursorja */
+}
+a .fas, a .fa {
+	cursor: pointer;
+}
+
+
+
+
+/* celoten zgornji del (logo + navigacija)*/
+header {
+	display: flex;
+}
+.spacer { /* za poravnavo na sredino */
+	flex: 1;
+}
+nav {
+	font-family: 'Open Sans', 'Trebuchet MS', Helvetica, Sans-serif;
+	display: flex;
+	flex-direction: column; /* gor-dol formacija [spacer, navigacija, spacer] vertikalno poravna linke na sredino */
+}
+nav ul {
+	padding: 0; /* po defaultu je padding na levi, kjer naj bi bile pikice, ker je to seznam */
+	margin: 1em;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right; /* ne deluje v nekaterih brskalnikih */
+}
+nav ul li {
+	display: inline;
+	margin: 0.5em;
+}
+nav i {
+	margin-right: 0.5em;
+	color: rgba(0,0,0,0.3);
+}
+nav a {
+	color: rgba(0,0,0,0.6);
+	margin: 0.5em;
+}
+nav ul:hover a {
+	color: rgba(0,0,0,0.4);
+}
+nav ul:hover a:hover {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dashed black;
+}
+nav ul:hover a:hover > i {
+	color: rgba(0,0,0,0.6);
+}
+
+
+
+/* quick section - glavni naslov, short description in gumb za hitro prijavo */
+#quick {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+
+	background-image: url("media/skupinska_ucenje.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#shadow {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255,255,255,.8);
+	height: 100%;
+
+	padding-bottom: 13em;
+	padding-top: 8em;
+}
+#title { /* glavni naslov (Tutorstvo GL) */
+	font-size: 3em;
+	margin-top: 0;
+
+	text-shadow: 1px 1px 1px white, -1px -1px 1px white;
+}
+#title i { /* ikona v naslovu */
+	margin-right: 0.5em;
+	color: white;
+	background-color: hsl(0, 0%, 15%);
+	border-radius: 100%;
+	height: 1em;
+	width: 1em;
+	padding: 20px 23px 20px 17px;
+	font-size: 0.7em;
+	text-shadow: none;
+	box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+}
+#description { /* kratek opis tutorstva, kuj pod naslovom */
+	color: rgba(0,0,0,0.8);
+	font-family: 'Trebuchet MS', Sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 5em;
+
+	text-shadow: 1px 1px 1px white, -1px -1px 1px white;
+}
+
+
+
+#signup { /* poisci tutorja */
+	background-color: hsl(354, 95%, 67%); /* desaturirana magenta iz ledinskega logotipa */
+	box-shadow: 2px 4px 2px hsl(354, 95%, 90%);
+	margin-right: 2em;
+}
+#join { /* postani tutor */
+	background-color: hsl(196, 54%, 60%); /* desaturirana modra iz ledinskega logotipa */
+	box-shadow: 2px 4px 2px hsl(196, 54%, 90%);
+	margin-left: 2em;
+}
+.quickbutton { /* gumb za hitro prijavo */
+	font-size: 1.15em;
+	border-radius: 2em;
+	color: white;
+	padding: 0.7em 1.5em;
+
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.quickbutton:hover {
+	text-decoration: none;
+}
+.quickbutton_arrow {
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.3);
+	width: 1.5em;
+	display: inline-block;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 5px;
+
+	position: relative;
+	left: 0.6em;
+	transition: left 0.1s ease-out;
+
+	animation: nudge 1s 0.5s 1 ease-out;
+}
+.quickbutton:hover > .quickbutton_arrow {
+	left: 2em;
+}
+
+@keyframes nudge {
+	0% {
+		left: 0.6em;
+	}
+	20% {
+		left: 2em;
+	}
+	40% {
+		left: 0em;
+	}
+	60% {
+		left: 2em;
+	}
+	80% {
+		left: 0em;
+	}
+	100% {
+		left: 0.6em;
+	}
+}
+
+/* en glavni div, notri je vse, kar je nizje od quick sectiona */
+main {
+	background-color: white;
+}
+
+
+section#prednosti { /* statistika - "Prednosti tutorstva" */
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
+	line-height: 1.5em;
+
+	box-sizing: border-box;
+	position: relative;
+	top: -5em;
+	background-color: white;
+	width: 86vw;
+	left: 7vw;
+
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+#prednosti h3, #prednosti h4 {
+	font-family: 'Open Sans', Sans-serif;
+}
+
+#prednosti h3 { /* za dijake / za tutorje */
+	text-align: center;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	width: 60%;
+	position: relative;
+	left: 20%;
+}
+#prednosti #za_dijake h3 {
+	background-color: hsl(354, 95%, 67%);
+}
+#prednosti #za_tutorje h3 {
+	background-color: hsl(196, 54%, 60%);
+}
+#prednosti #za_dijake {
+	padding-right: 2em;
+	border-right: 4px dashed hsl(0, 0%, 60%);
+}
+#prednosti #za_tutorje {
+	padding-left: 2em;
+}
+
+#prednosti table h4 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+#prednosti #za_dijake table h4, #prednosti #za_dijake i {
+	color: hsl(354, 95%, 67%);
+}
+#prednosti #za_tutorje table h4, #prednosti #za_tutorje i {
+	color: hsl(196, 54%, 60%);
+}
+#prednosti table {
+	margin-bottom: 2em;
+}
+#prednosti table tr {
+	margin-bottom: 0.5em;
+}
+#prednosti table i { /* ikone */
+	font-size: 2.5em;
+	color: hsl(196, 54%, 60%);
+	margin-right: 16px;
+}
+
+
+#faq {
+	padding: 0 2em; /*  gor-dol 0  *  levo-desno 2em  */
+	line-height: 1.5em;
+}
+#faq h3.article.title {
+	font-size: 2em;
+}
+#faq summary { /* vprasanje v FAQ */
+	font-weight: bold;
+	font-size: 1.3em;
+	font-family: 'Trebuchet MS', sans-serif;
+	margin: 1em 0 0.3em 0;
+}
+#faq details p { /* odgovor v FAQ */
+	margin-left: 1.5em;
+	margin-top: 0;
+	text-align: justify; /* obojestranska poravnava zgleda bol professionalno */
+}
+#faq summary:hover {
+	cursor: pointer;
+}
+#faq summary:focus {
+	outline: none;
+}
+
+
+
+#quick_feedback {
+	margin-top: 2em;
+	width: 400px;
+	height: 240px;
+	display: inline-block;
+	box-shadow: 0 0 5px hsl(0, 0%, 90%);
+	position: relative;
+	left: calc(50% - 200px);
+}
+#quick_feedback iframe {
+	max-height: 240px !important;
+	min-height: 240px !important;
+}
+
+
+/* footer */
+#footer { /* kje nas najdete */
+	background-color: LemonChiffon;
+	padding: 2em;
+	padding-top: 1em;
+	margin-top: 4em;
+	border-top: dashed 3px gold; /* meja med footerjem in vsebino */
+}
+#signature { /* "Stran so postavili tutorji GL" */
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-top: 3em;
+}
+
+
+
+
+
+
+.mobile {
+	display: none;
+}
+
+/* OZKI EKRANI - mobile view */
+@media screen and (max-width: 700px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: initial;
+	}
+
+	html {
+		font-size: 0.7em;
+	}
+
+	h1#title i {
+		display: inline;
+		padding: 20px;
+		margin: 0;
+		margin-bottom: 1em;
+	}
+	#quick {
+		margin: auto;
+	}
+	#quick p, #quick a {
+		margin: 2em;
+	}
+
+	#quick #buttons {
+		margin-top: 3em;
+	}
+	#quick #buttons a {
+		display: inline-block;
+		margin: 1em;
+	}
+
+	section#prednosti {
+		width: 100%;
+		left: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	/* ikonce v "prednosti tutorstva" so nad textom */
+    #prednosti tr td {
+        display: block;
+		text-align: center;
+    }
+	#prednosti tr td:first-child {
+		margin-top: 1em;
+	}
+
+
+
+	i.fa, i.fas, #prednosti table i {
+		margin: 0;
+		display: block;
+	}
+
+	#prednosti h4 {
+		margin-top: 0.5em;
+	}
+}

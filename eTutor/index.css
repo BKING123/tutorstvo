@@ -1,0 +1,227 @@
+/***************/
+/* PROFILE BOX */
+/***************/
+#profile {
+	background-color: lightyellow;
+	width: 80%;
+	max-width: 50em;
+	margin: 0 auto;
+	display: flex;
+	padding: 2em;
+	box-shadow: 0px 0px 20px lightblue;
+}
+
+
+
+/******************************/
+/* FACE IMAGE */
+#face {
+	flex: 1;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#image {
+	width: 30%;
+}
+
+/* PERONAL INFORMATION TABLE */
+#data {
+	flex: 1;
+	padding: 1em 1em 1em 2em;
+}
+#data table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-style: solid none;
+}
+#data table td {
+	padding: 0.5em 1em;
+}
+#data table td:last-child {
+	text-align: right;
+}
+#data table tr {
+	border-bottom: 1px solid black;
+}
+#data table tr:last-child {
+	border: none;
+}
+
+
+/* "EDIT" SECTION */
+#edit {
+	padding: 1em 1em 1em 2em;
+	border-left: dashed lightBlue;
+	display: flex;
+	flex-direction: column; /* elementi se vrstijo navzdol */
+}
+#edit div {
+	flex: 1;
+	font-weight: bold;
+}
+#edit a {
+	color: black;
+	text-decoration: none;
+}
+.icon {
+	margin-right: 0.5em;
+}
+
+/********************************************************************************************************/
+body {
+	margin: 20px 0 0 0;
+	background: linear-gradient(to right, lightBlue, aliceBlue 14%, aliceBlue 86%, lightBlue 100%);
+	font-family: 'Helvetica Neue', Helvetica, Sans-serif;
+}
+
+h2 {
+	font-family: 'Trebuchet MS', Sans-serif;
+	border-bottom: solid 2px; /* TODO: dodaj primerno barvo */
+	padding-bottom: 5px;
+	font-size: 2em;
+}
+
+
+
+
+#novice {
+	width: 80%;
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+
+article h3 {
+	font-size: 1.6em;
+	font-family: 'Trebuchet MS', Sans-serif;
+	border-left: solid 3px black;
+	padding-left: 1em;
+}
+
+article p {
+	display: flex;
+	padding: 2em;
+	border-left: solid 3px black;
+}
+
+.novica h3, .novica p {
+	border-color: yellow;
+}
+.novica p {
+	background: linear-gradient(to right, lightYellow, aliceBlue);
+}
+
+.oglas h3, .oglas p {
+	border-color: blue;
+}
+.oglas p {
+	background: linear-gradient(to right, lightBlue, aliceBlue);
+}
+
+.nujno h3, .nujno p {
+	border-color: red;
+}
+.nujno p {
+	background: linear-gradient(to right, #FB5B6C, aliceBlue);
+}
+
+
+
+
+
+.mobile {
+	display: none; /* skrij vse mobile-only */
+}
+
+/* PRAVILA ZA OZKE EKRANE */
+@media screen and (max-width: 1000px) { /* ce je ekran ozji od 1000px */
+	.desktop {
+		display: none; /* skrij vse desktop-only */
+	}
+	.mobile {
+		display: initial; /* pokazi vse mobile-only */
+	}
+
+	body {
+		background: aliceBlue;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* ponastavi vse vrednosti */
+	#profile, #novice {
+		width: initial;
+		max-width: initial;
+		margin: initial;
+	}
+
+
+	#profile {
+		flex-direction: column; /* elementi se vrstijo navzdol */
+		padding: 0;
+		margin: 3px;
+		border: 5px outset black;
+	}
+	#profile div {
+		margin: 0 auto;
+	}
+	#face {
+		border-radius: 100%; /* slika je okrogla */
+		margin-top: 2em;
+	}
+	div#edit {
+		flex-direction: row;
+		flex-wrap: wrap;
+		border: none;
+		padding: 0;
+		width: 100%;
+
+		background-color: lightgray;
+	}
+	#edit div {
+		text-align: center;
+		padding: 1em;
+		border: 2px inset black;
+	}
+	#edit .icon {
+		display: block;
+		margin: 0;
+	}
+
+
+	#novice {
+		padding: 0;
+	}
+	#novice h2 {
+		border: 2px dashed black;
+		border-style: dashed none;
+		margin: 1.7em 2em 1em 2em;
+		text-align: center;
+	}
+	article p, article h3 {
+		border: none;
+	}
+	article {
+		border: 0.5em solid black;
+		border-style: solid none;
+	}
+	article.novica {
+		border-color: yellow;
+		background-color: lightyellow;
+	}
+	article.oglas {
+		border-color: blue;
+		background-color: lightblue;
+	}
+	article.nujno {
+		border-color: red;
+		background-color: pink;
+	}
+	.novica p, .oglas p, .nujno p {
+		background: initial;
+	}
+
+}

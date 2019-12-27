@@ -1,77 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="sl">
 	<head>
 		<title>Tutorstvo GL</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="Uradna stran Tutorstva na GL">
-		<meta name="keywords" content="Ledina, Tutorji, najjaci">
-		<meta name="author" content="Yon Ploj, plojyon, BKING">
-		<meta name="viewpoint" content="width=device-vidth,initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="description" content="Uradna stran Tutorstva GL">
+		<meta name="keywords" content="Ledina, Tutorji, Tutorcki, Tutorstvo, GL">
+		<meta name="author" content="Yon Ploj, Domen Vogrin"> <!-- ne pozabite se dodati kot avtor! -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="media/favicon.png">
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123722328-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-123722328-2');
+		</script>
+
+
+		<!-- font z ikonami -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+		<!-- google fonti -->
+		<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue%7COpen+Sans:800" crossorigin="anonymous">-->
+
+
+		<!--
+		Primeri ikon:
+			Hisica (home) 				<i class="fa fa-home"></i>
+			Grid (podoben logotipu GL) 	<i class="fas fa-th"></i>
+			Casopis (novice) 			<i class="far fa-newspaper"></i>
+			Skupnost (kdo smo)			<i class="fas fa-users"></i>
+			Lupa (isci tutorja)			<i class="fas fa-search"></i>
+			Cloveck+ (postani tutor)	<i class="fas fa-user-plus"></i>
+			Graduation cap (tutorstvo) 	<i class="fas fa-graduation-cap"></i>
+		-->
+
+		<script>
+			console.log("----------------------------------------------------------------------------------------------------------------------------");
+			console.log("Hey!\nImas izkusnje z razvijanjem spletnih strani?\n\nPridruzi se tutorski ekipi in pomagaj pri razvoju prav te!");
+			console.log("Projekt je open-source, najdes ga na githubu: https://github.com/plojyon/tutorstvo \nce pa zelis pomagati, se oglasi v kabinetu pri Anji Vidmar in z veseljem te bomo sprejeli!");
+			console.log("Ne pozabi, da s sodelovanjem pri razvoju dobis tudi ostale tutorske privilegije, npr. koncni izlet in tocke za naj razred!");
+			console.log("Pricakujemo te!");
+			console.log("	-Ekipa tutorjev Ledine");
+			console.log("----------------------------------------------------------------------------------------------------------------------------");
+		</script>
 	</head>
+	<!--
+	Hey!
+	Imas izkusnje z razvijanjem spletnih strani?
+
+	Pridruzi se tutorski ekipi in pomagaj pri razvoju prav te!
+
+	Projekt je open-source, najdes ga na githubu: https://github.com/plojyon/tutorstvo.
+	Ce pa zelis pomagati, se oglasi v kabinetu pri Anji Vidmar in z veseljem te bomo sprejeli!
+
+	Ne pozabi, da s sodelovanjem pri razvoju dobis tudi ostale tutorske privilegije, npr. koncni izlet in tocke za naj razred!
+
+	Pricakujemo te!
+		-Ekipa tutorjev Ledine
+	-->
 	<body>
-		<div id="title">
-			<h1>Tutorstvo Ledina</h1>
-		</div>
-		<nav id="menu">
-			<a id="gumb" class="selected" href="index.html"><i class="fa fa-home"><!--to je character z hisico--></i></a>
-			<a href="https://www.ledina.si/" target="_blank">GL</a><!-- se odpre v novem zavihku -->
-		</nav>
-		<div class="telo">
-			<h2>Predstavitev</h2>
-			
-			<!-- skupinska slika tutorjev GL -->
-			<img src="example.jpeg" id="skupinska" alt="Skupinska slika tutorjev 2018" hspace="20"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae diam purus. Proin eu molestie tellus. Interdum et malesuada 
-			fames ac ante ipsum primis in faucibus. Donec venenatis quis enim pharetra euismod. Sed accumsan mauris eros, sit amet dapibus lorem
-			tincidunt eget. Nullam a arcu pulvinar, egestas diam id, venenatis velit. Vestibulum faucibus vulputate urna, in venenatis mauris eleifend
-			vitae. Mauris id viverra lacus, ac posuere dui. Praesent nunc lectus, lobortis quis ultrices ac, consequat in risus. Nulla maximus arcu 
-			ipsum, sed dignissim leo ultricies sed. Aenean volutpat purus in ligula interdum pretium. Nulla placerat orci dui, sit amet facilisis magna
-			efficitur et.</p>
-			<article id="novica_34">
-				<h3>Naslov novice</h3><i>(24.4.2019)</i>
-				<p>Pellentesque gravida metus eu elementum elementum. Fusce placerat tempus eros a rutrum. Aliquam aliquam imperdiet posuere. Nam quis
-				odio ut purus egestas euismod. Donec congue imperdiet felis, et varius mi suscipit non. Phasellus dapibus, ex nec tempus tristique,
-				ipsum ex pulvinar nibh, in suscipit sem eros et ex. In hac habitasse platea dictumst. Aliquam quis vestibulum metus, quis iaculis magna.
-				Curabitur vitae metus interdum, ultricies ante hendrerit, suscipit metus.</p>
-				<sup>Avtor: Lorem Ipsum</sup>
-			</article>
-			<p>Curabitur porttitor, nunc sit amet tincidunt vehicula, magna justo faucibus dui, vitae ullamcorper libero purus in tellus. Nullam
-			quis mi eros. Duis nisl sem, dignissim a sem ut, blandit convallis massa. Nulla id mi a massa porttitor consectetur eget ac massa. Donec 
-			ullamcorper libero ac mauris vehicula, sed interdum sem ultrices. Aenean metus mi, luctus vel neque ut, egestas luctus ante. Maecenas
-			condimentum faucibus ex, eget consectetur tellus volutpat ut. Suspendisse condimentum elit ac mi malesuada convallis.</p>
-			<p>Maecenas accumsan nibh dui, ac vestibulum ligula convallis quis. Proin et consequat purus. Duis ac dui placerat, sodales orci
-			eget, vehicula enim. Nam porttitor, dui nec tempor mollis, est dui laoreet erat, quis pulvinar leo mi sed sem. Nunc dignissim nec
-			eros sit amet semper. In tincidunt maximus augue nec euismod. Donec vestibulum, tellus ac commodo tincidunt, nulla massa fringilla
-			urna, vel blandit velit sem vitae dolor. Morbi viverra at orci eu dictum. Fusce ante eros, faucibus non turpis ut, suscipit blandit
-			magna. Praesent rutrum facilisis feugiat. Cras sagittis aliquet elementum. Sed lacinia, felis in rhoncus varius, justo felis tincidunt
-			ex, sit amet maximus augue magna nec nulla. Nulla euismod erat at lacus scelerisque maximus.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae diam purus. Proin eu molestie tellus. Interdum et malesuada 
-			fames ac ante ipsum primis in faucibus. Donec venenatis quis enim pharetra euismod. Sed accumsan mauris eros, sit amet dapibus lorem
-			tincidunt eget. Nullam a arcu pulvinar, egestas diam id, venenatis velit. Vestibulum faucibus vulputate urna, in venenatis mauris eleifend
-			vitae. Mauris id viverra lacus, ac posuere dui. Praesent nunc lectus, lobortis quis ultrices ac, consequat in risus. Nulla maximus arcu 
-			ipsum, sed dignissim leo ultricies sed. Aenean volutpat purus in ligula interdum pretium. Nulla placerat orci dui, sit amet facilisis magna
-			efficitur et.</p>
-			<p>Pellentesque gravida metus eu elementum elementum. Fusce placerat tempus eros a rutrum. Aliquam aliquam imperdiet posuere. Nam quis
-			odio ut purus egestas euismod. Donec congue imperdiet felis, et varius mi suscipit non. Phasellus dapibus, ex nec tempus tristique,
-			ipsum ex pulvinar nibh, in suscipit sem eros et ex. In hac habitasse platea dictumst. Aliquam quis vestibulum metus, quis iaculis magna.
-			Curabitur vitae metus interdum, ultricies ante hendrerit, suscipit metus.</p>
-			<p>Curabitur porttitor, nunc sit amet tincidunt vehicula, magna justo faucibus dui, vitae ullamcorper libero purus in tellus. Nullam
-			quis mi eros. Duis nisl sem, dignissim a sem ut, blandit convallis massa. Nulla id mi a massa porttitor consectetur eget ac massa. Donec 
-			ullamcorper libero ac mauris vehicula, sed interdum sem ultrices. Aenean metus mi, luctus vel neque ut, egestas luctus ante. Maecenas
-			condimentum faucibus ex, eget consectetur tellus volutpat ut. Suspendisse condimentum elit ac mi malesuada convallis.</p>
-			<p>Maecenas accumsan nibh dui, ac vestibulum ligula convallis quis. Proin et consequat purus. Duis ac dui placerat, sodales orci
-			eget, vehicula enim. Nam porttitor, dui nec tempor mollis, est dui laoreet erat, quis pulvinar leo mi sed sem. Nunc dignissim nec
-			eros sit amet semper. In tincidunt maximus augue nec euismod. Donec vestibulum, tellus ac commodo tincidunt, nulla massa fringilla
-			urna, vel blandit velit sem vitae dolor. Morbi viverra at orci eu dictum. Fusce ante eros, faucibus non turpis ut, suscipit blandit
-			magna. Praesent rutrum facilisis feugiat. Cras sagittis aliquet elementum. Sed lacinia, felis in rhoncus varius, justo felis tincidunt
-			ex, sit amet maximus augue magna nec nulla. Nulla euismod erat at lacus scelerisque maximus.</p>
-			<ul>
-				<li><a href="/wikiPINZLI">wiki Pinzli</a></li>
-				<li><a href="/tutorcki">tutorcki</a></li>
-				<li><a href="http://yon.ddns.net">Pinzli 2</a></li>
-			</ul>
-		</div>
+		<header class="desktop">
+			<a href="http://www.ledina.si"><img id="logo" class="desktop" src="media/ledina.jpg" alt="GL" height="150"></a>
+			<div class="desktop spacer"></div>
+			<nav>
+				<div class="spacer"></div>
+				<ul>
+					<!--<li><a class="selected" href="index.html"><i class="fa fa-home"></i>Domov</a></li>-->
+					<!--<li><a href="#novice"><i class="far fa-newspaper"></i>Novice</a></li>-->
+					<!--<li><a href="#faq"><i class="fas fa-users"></i>Kdo&nbsp;smo</a></li>-->
+					<li><a href="prijava.html"><i class="fas fa-search"></i>Poišči&nbsp;tutorja</a></li>
+					<li><a href="pridruzitev.html"><i class="fas fa-user-plus"></i>Postani&nbsp;tutor</a></li>
+					<!--<li><a href="eTutor/login.html"><i class="fas fa-sign-in-alt"></i>Prijava&nbsp;v&nbsp;eTutor</a></li>-->
+					<li><a href="anketa.html"><i class="fas fa-heartbeat"></i>Anketa o zadovoljstvu</a></li>
+				</ul>
+				<div class="spacer"></div>
+			</nav>
+		</header>
+
+		<section id="quick">
+			<div id="shadow">
+				<h1 id="title"><i class="fas fa-graduation-cap"></i><br class="mobile"><br class="mobile">Tutorstvo&nbsp;GL</h1>
+				<p id="description">Prostovoljna, brezplačna medsebojna dijaška pomoč<br>Prva pomoč proti slabim ocenam<br>Izboljšave vidne že po enem samem srečanju!</p>
+				<div id="buttons">
+					<a id="signup" class="quickbutton" href="prijava.html">poišči tutorja<span class="quickbutton_arrow"><i class="fas fa-arrow-right"></i></span></a>
+					<a id="join" class="quickbutton" href="pridruzitev.html">postani tutor<span class="quickbutton_arrow"><i class="fas fa-arrow-right"></i></span></a>
+				</div>
+			</div>
+		</section>
+
+		<main>
+			<section id="prednosti">
+				<article id="za_dijake">
+					<h3>Za dijake</h3>
+					<table>
+						<tr>
+							<td><i class="fas fa-users"></i></td>
+							<td><h4>Izkušenost</h4><p>Poznamo tvoje profesorje, hodimo po istih stopnicah in lepimo žvečilke pod iste klopi kot ti. Nihče ti ne bo mogel tako razložiti snovi kot tvoji sovrstniki, ki se soočamo z enakimi problemi.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-hand-holding-usd"></i></td>
+							<td><h4>Cena</h4><p>Tutorstvo je popolnoma zastonj. To dijaki delamo prostovoljno, z veliko pripravljenostjo in dobro voljo.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-book"></i></td>
+							<td><h4>Napredek</h4><p>Ocene in znanje so se do sedaj vedno izboljšali. Znanja vam sicer ne vbijemo v glavo, vam pa postrežemo z razlago in namigi za uspešnejše učenje tudi v prihodnje.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-comment-slash"></i></td>
+							<td><h4>Anonimnost</h4><p>Kar se zgodi pri tutorjih, ostane pri tutorjih. Med nami res velja popolna anonimnost. Zanima nas le predmet, snov in profesor, saj se tako najlažje že vnaprej pripravimo na razlago. Informacije o uri se ne delijo niti med tutorji.</p>
+						</tr>
+					</table>
+				</article>
+				<article id="za_tutorje">
+					<h3>Za tutorje</h3>
+					<table>
+						<tr>
+							<td><i class="fas fa-chalkboard-teacher"></i></td>
+							<td><h4>Izkušnje</h4><p>Ali ste vedeli, da je bila Ledina do leta 1988 pedagoška šola? Učimo se sposobnosti poučevanja, izkušnje na področju pedagogike pa v življenju res nikoli niso odveč.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-chart-line"></i></td>
+							<td><h4>Napredek</h4><p>Predvsem pri maturitetnih predmetih, redno ponavljanje snovi vseh 4 letnikov je izjemnega pomena pri pripravah na maturo, hkrati pa boljše razumevanje stare snovi omogoča lažje razumevanje sprotne.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-user-friends"></i></td>
+							<td><h4>Socializacija</h4><p>Z ostalimi Ledinci boste navezali stike, ustvarili nova prijateljstva in veze, ki so še kako pomembne, ne samo za življenje na šoli, temveč tudi kasneje v življenju.</p>
+						</tr>
+						<tr>
+							<td><i class="fas fa-check-circle"></i></td>
+							<td><h4>OIV</h4><p>S sodelovnjem v tutorstvu se vam avtomatično krije cel izbirni del OIV ur.</p>
+						</tr>
+					</table>
+				</article>
+			</section>
+
+			<section id="faq">
+				<article>
+					<h3 class="article title">FAQ</h3>
+					<details>
+						<summary>Kako izgleda učna ura?</summary>
+						<p>Tutor in dijak se običajno dobita pred kabinetom 19, pri šolski psihologinji <!--dr. prof.--> (Anja Vidmar). Nato skupaj odideta v nek prostor, kjer lahko
+						nemoteno delata. To je običajo kakšna prazna učilnica, lahko pa tudi dnevna soba pred knjižnico ali dijaški kotiček.
+						Ura običajno traja med petnajst in petinštirideset minut, lahko se konča že po petih minutah, lahko pa se zavleče tudi v več ur. V tem
+						primeru se dijak in tutor ponavadi dogovorita za nov datum, saj je marsikdaj težko več ur zapored zbrano spremljati snov, ki ti ne leži najbolje.</p>
+					</details>
+					<details>
+						<summary>Ali lahko pridem s prijateljem?</summary>
+						<p>Seveda! Vedno pogosteje prihajajo na tutorstvo pari ali manjše skupine. Pogosto to olajša komunikacijo med sramežljivimi dijaki, ki bi bili sami
+						načeloma manj komunikativni.</p>
+						<p>V primeru večjih skupin lahko prideta tudi po dva tutorja in si malo porazdelita delo glede na lastne želje (jaz ne maram tok vektorjev, pomagi ti
+						njej, jaz bom pa unmu s kompleksnimi števili).</p>
+					</details>
+					<details>
+						<summary>Kakšen odnos imata dijak in njegov tutor?</summary>
+						<p>Tutor in dijak sta v prijateljskem odnosu. Vsak pozna svoje naloge, a vseeno se med sabo dostikrat pojavijo tudi nova
+						prijateljstva. V vsakem primeru pa dijak na koncu odide z boljšim razumevanjem in znanjem, tutor pa včasih tudi s kakšno čokolado od dijaka.</p>
+					</details>
+					<details>
+						<summary>Kaj dela tutor?</summary>
+						<p>Tutor pomaga ostalim dijakom pri stvareh, ki gredo njemu bolje kot ostalim. Včasih se tudi zgodi, da dijak ve stvari, ki jih ne ve
+						niti tutor, a s tem ni nič narobe, saj nihče ni popoln<!-- Razen mene-->. V takih primerih lahko poiščemo drugega tutorja, ali pa se do
+						naslednjič sami pozanimamo.</p>
+						<p>Tutorji poleg razlage snovi hkrati pogosto dajemo tudi namige za učenje. Ker poznamo vaše profesorje, vemo, kako se jim bolje približati.</p>
+					</details>
+					<details>
+						<summary>Zakaj postati tutor?</summary>
+						<p>Biti tutor je zelo častna naloga. Plačani nismo, a marsikdaj se nam polepša dan, ko izvemo, da je nekdo, ki smo ga tutorirali, dobil oceno, ki si
+						jo je želel, oziroma še višjo!</p>
+						<p>Tutorji smo zelo povezana skupina in se redno srečujemo. Ker nihče ni popoln, si na teh srečanjih med drugim predajamo izkušnje,
+						da znamo pomagati tudi v hujših primerih, ko nekaj resnično ne gre.</p>
+					</details>
+					<script>
+						// da se usi FAQji odprejo po defaultu
+						Array.from(document.querySelectorAll('details')).forEach(function(obj, idx) {
+							obj.open = true;
+						});
+					</script>
+				</article>
+			</section>
+
+			<section id="quick_feedback">
+				<script src="https://form.jotformeu.com/jsform/92844623215356"></script>
+			</section>
+
+			<section id="footer">
+				<article id="kje_smo">
+					<h3 class="article title">Kje nas najdete?</h3>
+					<p>Najdete nas lahko v kabinetu 19 (prvo nadstropje, konec južnega hodnika). Tam se prijavite kot tutoriranci (dijaki) ali tutorji. V primeru, da nas v kabinetu ni, se lahko
+					obrnete na učečega profesorja in ta vam bo poskusil pomagati kar najbolje zna.</p>
+				</article>
+
+				<section id="signature">
+					<p><a href="https://github.com/plojyon/tutorstvo">Stran</a> so postavili tutorji Gimnazije Ledina.</p>
+					<!-- TODO: tuki damo link, ki te vrze na neko stran z navodili kako pomagat delat stran -->
+					<p><a class="mobile" href="#">Nazaj gor</a></p>
+				</section>
+			</section>
+		</main>
 	</body>
 </html>
