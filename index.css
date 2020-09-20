@@ -334,7 +334,7 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 	display: inline-block;
 	box-shadow: 0 0 5px hsl(0, 0%, 90%);
 	position: relative;
-	left: calc(50% - 200px);
+	left: calc(50% - 150px);
 }
 
 
