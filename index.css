@@ -73,6 +73,10 @@ a .fas, a .fa {
 header {
 	display: flex;
 }
+header, header img {
+	height: 15vh;
+	min-height: 85px;
+}
 .spacer { /* za poravnavo na sredino */
 	flex: 1;
 }
