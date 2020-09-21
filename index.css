@@ -379,6 +379,31 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 		font-size: 0.7em;
 	}
 
+	header {
+		min-height: initial;
+		height: auto;
+	}
+	header nav {
+		width: 100%;
+	}
+	header ul {
+		display: flex;
+		flex-direction: row;
+	}
+	header ul > * {
+		flex: 1;
+	}
+	header nav a {
+		margin: 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	header nav ul:hover a:hover {
+		border: none;
+	}
+
 	h1#title i {
 		display: inline;
 		padding: 20px;
