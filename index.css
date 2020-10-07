@@ -451,3 +451,11 @@ section#prednosti { /* statistika - "Prednosti tutorstva" */
 		margin-top: 0.5em;
 	}
 }
+
+/* FUL OZKI EKRANI - compact mobile view */
+@media screen and (max-width: 500px) {
+	#prednosti h3 {
+		width: 100%;
+		left: 0;
+	}
+}
